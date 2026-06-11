@@ -1,0 +1,1465 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: inherit;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+@media (hover:hover) {
+    html {
+        font-family: "dm sans", sans-serif;
+    }
+
+ 
+
+}
+
+@media (hover:none) {
+    html {
+        font-family: roboto, sans-serif;
+    }
+}
+
+  html {
+        font: size 14px;
+    }
+
+    .hero {
+        background-color: white;
+        width: 100%;
+        height: 100dvh;
+    }
+
+
+
+
+    .head {
+        display: none;
+        align-items: center;
+        width: 100%;
+        gap: 5rem;
+        padding: 0.5rem;
+        padding-left: 1rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        font-size: clamp(0.8rem, 3.5vw, 1.5rem);
+        background-color: white;
+        z-index: 1;
+    }
+
+
+    .uname {
+        font-weight: 600;
+    }
+
+    .left {
+        font-size: 1.5rem;
+    }
+
+    .img_fram {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        border: 3px solid rgb(237, 42, 74);
+    }
+
+    .img_fram img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 2px solid white
+    }
+
+    .about {
+        margin-top: 3rem;
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .img_fol {
+        display: flex;
+        gap: 1.4rem;
+        align-items: center;
+    }
+
+    .fol {
+        display: flex;
+        flex-direction: column;
+        gap: 0.9rem;
+    }
+
+
+    .Tname {
+        font-size: clamp(0.7rem, 3.5vw, 1.5rem);
+        font-weight: 600;
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    .blue {
+        color: blue;
+    }
+
+    .dots {
+        color: gray;
+    }
+
+    .Fcount {
+        display: flex;
+        gap: 1.5rem;
+        font-size: clamp(0.7rem, 3.5vw, 1.5rem);
+    }
+
+    .bio {
+        margin-top: 0.2rem;
+        font-size: clamp(0.7rem, 3.5vw, 1.5rem);
+        width: 100%;
+        padding: 0.7rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+
+    .atl {
+        color: gray;
+        font-weight: 400;
+    }
+
+    .spike {
+        font-weight: 550;
+        cursor: pointer;
+    }
+
+    .leb {
+        width: 1.7rem;
+        height: 1.7rem;
+        border-radius: 50%;
+    }
+
+    .followed {
+        width: 100%;
+        padding-left: 0.7rem;
+        font-size: clamp(0.5rem, 3.5vw, 1.5rem);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .follow {
+        width: 100%;
+        padding: 0.7rem;
+        padding-top: 0.9rem;
+        display: flex;
+        gap: 0.7rem;
+    }
+
+    .reg {
+        font-size: clamp(0.3rem, 3.5vw, 1rem);
+        padding: 0.8em 6em 0.8em 6em;
+        border-radius: 12px;
+        border: none;
+        font-weight: 4000;
+        cursor: pointer;
+    }
+
+    .flow {
+        background-color: rgb(83, 83, 247);
+        color: white;
+    }
+
+    .mess {
+        background-color: lightgray;
+    }
+
+    .user-plus {
+        border: none;
+        padding: 0.5em 1.2em 0.5em 1.2em;
+        border-radius: 8px;
+        background-color: lightgray;
+    }
+
+  .content {
+    width: 70%;
+    margin: 0;
+  }
+
+  .content nav {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between; 
+     font-size: clamp(1.2rem, 3.5vw, 1.5rem);
+    align-items: center;
+    color: gray;
+    display: flex;
+    padding-left: 7em;
+    padding-right: 7em;
+  }
+
+
+    .content nav i {
+        cursor: pointer;
+    }
+
+  .strict {
+    color: black;
+    transform: rotate(90deg);
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .window {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.06rem;
+  }
+
+  .window img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+.vue {
+    display: flex;
+    flex-direction: column;
+    gap:0;
+    position: relative;
+    box-sizing: content-box;
+}
+
+.vue hr {
+  height: 3.5px;
+  width:70px;
+  background-color:black;
+  position: absolute;
+  top:-2px;
+  border: none;
+  border-radius: 5px;
+  align-self: center;
+}
+
+.navi {
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size:  clamp(1.2rem, 3.5vw, 1.7rem);
+    padding: 0.8em 1em 0.8em 1em;
+}
+
+
+@media (min-width:700px) and (max-width:767px) {
+
+    html {
+        font: size 14px;
+    }
+
+    .hero {
+        background-color: white;
+        width: 100%;
+        height: 100dvh;
+    }
+
+
+
+
+    .head {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 5rem;
+        padding: 0.5rem;
+        padding-left: 1rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        font-size: clamp(0.8rem, 3.5vw, 1.5rem);
+        background-color: white;
+        z-index: 1;
+    }
+
+
+    .uname {
+        font-weight: 600;
+    }
+
+    .left {
+        font-size: 1.5rem;
+    }
+
+    .img_fram {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        border: 3px solid rgb(237, 42, 74);
+    }
+
+    .img_fram img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 2px solid white
+    }
+
+    .about {
+        margin-top: 4rem;
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .img_fol {
+        display: flex;
+        gap: 1.4rem;
+        align-items: center;
+    }
+
+    .fol {
+        display: flex;
+        flex-direction: column;
+        gap: 0.9rem;
+    }
+
+
+    .Tname {
+        font-size: clamp(0.7rem, 3.5vw, 1.5rem);
+        font-weight: 600;
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    .blue {
+        color: blue;
+    }
+
+    .dots {
+        color: gray;
+    }
+
+    .Fcount {
+        display: flex;
+        gap: 1.5rem;
+        font-size: clamp(0.7rem, 3.5vw, 1.5rem);
+    }
+
+    .bio {
+        margin-top: 0.2rem;
+        font-size: clamp(0.7rem, 3.5vw, 1.5rem);
+        width: 100%;
+        padding: 0.7rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+
+    .atl {
+        color: gray;
+        font-weight: 400;
+    }
+
+    .spike {
+        font-weight: 550;
+        cursor: pointer;
+    }
+
+    .leb {
+        width: 1.7rem;
+        height: 1.7rem;
+        border-radius: 50%;
+    }
+
+    .followed {
+        width: 100%;
+        padding-left: 0.7rem;
+        font-size: clamp(0.5rem, 3.5vw, 1.5rem);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .follow {
+        width: 100%;
+        padding: 0.7rem;
+        display: flex;
+        gap: 0.7rem;
+    }
+
+    .reg {
+        font-size: clamp(0.3rem, 3.5vw, 1.5rem);
+        padding: 0.5em 3.2em 0.5em 3.2em;
+        border-radius: 5px;
+        border: none;
+        font-weight: 550;
+        cursor: pointer;
+    }
+
+    .flow {
+        background-color: rgb(83, 83, 247);
+        color: white;
+    }
+
+    .mess {
+        background-color: lightgray;
+    }
+
+    .user-plus {
+        border: none;
+        padding: 0.5em 0.9em 0.5em 0.9em;
+        border-radius: 5px;
+        background-color: lightgray;
+    }
+
+  .content {
+    width: 100%;
+    margin: 0;
+  }
+
+  .content nav {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between; 
+     font-size: clamp(1.2rem, 3.5vw, 1.5rem);
+    align-items: center;
+    color: gray;
+    display: flex;
+    padding-left: 2.7em;
+    padding-right: 2.7em;
+  }
+
+
+    .content nav i {
+        cursor: pointer;
+    }
+
+  .strict {
+    color: black;
+    transform: rotate(90deg);
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .window {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.06rem;
+  }
+
+  .window img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+.vue {
+    display: flex;
+    flex-direction: column;
+    gap:0;
+    position: relative;
+    box-sizing: content-box;
+}
+
+.vue hr {
+  height: 3.5px;
+  width:70px;
+  background-color:black;
+  position: absolute;
+  top:-2px;
+  border: none;
+  border-radius: 5px;
+  align-self: center;
+}
+
+.navi {
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size:  clamp(1.2rem, 3.5vw, 1.7rem);
+    padding: 0.8em 1em 0.8em 1em;
+}
+
+}
+
+@media (min-width:600px) and (max-width:699px) {
+
+     html {
+        font: size 14px;
+    }
+
+    .hero {
+        background-color: white;
+        width: 100%;
+        height: 100dvh;
+    }
+
+
+
+
+    .head {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 5rem;
+        padding: 0.5rem;
+        padding-left: 1rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        font-size: clamp(0.8rem, 3.5vw, 1.5rem);
+        background-color: white;
+        z-index: 1;
+    }
+
+
+    .uname {
+        font-weight: 600;
+    }
+
+    .left {
+        font-size: 1.5rem;
+    }
+
+    .img_fram {
+        width: 5.9rem;
+        height: 5.9rem;
+        border-radius: 50%;
+        border: 3px solid rgb(237, 42, 74);
+    }
+
+    .img_fram img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 2px solid white
+    }
+
+    .about {
+        margin-top: 4rem;
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .img_fol {
+        display: flex;
+        gap: 1.4rem;
+        align-items: center;
+    }
+
+    .fol {
+        display: flex;
+        flex-direction: column;
+        gap: 0.9rem;
+    }
+
+
+    .Tname {
+        font-size: clamp(0.7rem, 3.5vw, 1.5rem);
+        font-weight: 600;
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    .blue {
+        color: blue;
+    }
+
+    .dots {
+        color: gray;
+    }
+
+    .Fcount {
+        display: flex;
+        gap: 1.5rem;
+        font-size: clamp(0.7rem, 3.5vw, 1.5rem);
+    }
+
+    .bio {
+        margin-top: 0.2rem;
+        font-size: clamp(0.7rem, 3.5vw, 1.5rem);
+        width: 100%;
+        padding: 0.7rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+
+    .atl {
+        color: gray;
+        font-weight: 400;
+    }
+
+    .spike {
+        font-weight: 550;
+        cursor: pointer;
+    }
+
+    .leb {
+        width: 1.7rem;
+        height: 1.7rem;
+        border-radius: 50%;
+    }
+
+    .followed {
+        width: 100%;
+        padding-left: 0.7rem;
+        font-size: clamp(0.5rem, 3.5vw, 1.5rem);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .follow {
+        width: 100%;
+        padding: 0.7rem;
+        display: flex;
+        gap: 0.7rem;
+    }
+
+    .reg {
+        font-size: clamp(0.3rem, 3.5vw, 1.5rem);
+        padding: 0.5em 3.2em 0.5em 3.2em;
+        border-radius: 5px;
+        border: none;
+        font-weight: 550;
+        cursor: pointer;
+    }
+
+    .flow {
+        background-color: rgb(83, 83, 247);
+        color: white;
+    }
+
+    .mess {
+        background-color: lightgray;
+    }
+
+    .user-plus {
+        border: none;
+        padding: 0.5em 0.9em 0.5em 0.9em;
+        border-radius: 5px;
+        background-color: lightgray;
+    }
+
+  .content {
+    width: 100%;
+    margin: 0;
+  }
+
+  .content nav {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between; 
+     font-size: clamp(1.2rem, 3.5vw, 1.5rem);
+    align-items: center;
+    color: gray;
+    display: flex;
+    padding-left: 2.7em;
+    padding-right: 2.7em;
+  }
+
+
+    .content nav i {
+        cursor: pointer;
+    }
+
+  .strict {
+    color: black;
+    transform: rotate(90deg);
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .window {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.06rem;
+  }
+
+  .window img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+.vue {
+    display: flex;
+    flex-direction: column;
+    gap:0;
+    position: relative;
+    box-sizing: content-box;
+}
+
+.vue hr {
+  height: 3.5px;
+  width:70px;
+  background-color:black;
+  position: absolute;
+  top:-2px;
+  border: none;
+  border-radius: 5px;
+  align-self: center;
+}
+
+.navi {
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size:  clamp(1.2rem, 3.5vw, 1.7rem);
+    padding: 0.8em 1em 0.8em 1em;
+}
+
+}
+
+@media (min-width:500px) and (max-width:599px) {
+
+      html {
+        font: size 14px;
+    }
+
+    .hero {
+        background-color: white;
+        width: 100%;
+        height: 100dvh;
+    }
+
+
+
+
+    .head {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 5rem;
+        padding: 0.5rem;
+        padding-left: 1rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        font-size: clamp(0.8rem, 3.5vw, 1.5rem);
+        background-color: white;
+        z-index: 1;
+    }
+
+
+    .uname {
+        font-weight: 600;
+    }
+
+    .left {
+        font-size: 1.5rem;
+    }
+
+    .img_fram {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        border: 3px solid rgb(237, 42, 74);
+    }
+
+    .img_fram img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 2px solid white
+    }
+
+    .about {
+        margin-top: 4rem;
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .img_fol {
+        display: flex;
+        gap: 1.4rem;
+        align-items: center;
+    }
+
+    .fol {
+        display: flex;
+        flex-direction: column;
+        gap: 0.9rem;
+    }
+
+
+    .Tname {
+        font-size: clamp(0.7rem, 3.5vw, 1.5rem);
+        font-weight: 600;
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    .blue {
+        color: blue;
+    }
+
+    .dots {
+        color: gray;
+    }
+
+    .Fcount {
+        display: flex;
+        gap: 1.5rem;
+        font-size: clamp(0.7rem, 3.5vw, 1.5rem);
+    }
+
+    .bio {
+        margin-top: 0.2rem;
+        font-size: clamp(0.7rem, 3.5vw, 1.5rem);
+        width: 100%;
+        padding: 0.7rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+
+    .atl {
+        color: gray;
+        font-weight: 400;
+    }
+
+    .spike {
+        font-weight: 550;
+        cursor: pointer;
+    }
+
+    .leb {
+        width: 1.7rem;
+        height: 1.7rem;
+        border-radius: 50%;
+    }
+
+    .followed {
+        width: 100%;
+        padding-left: 0.7rem;
+        font-size: clamp(0.5rem, 3.5vw, 1.5rem);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .follow {
+        width: 100%;
+        padding: 0.7rem;
+        display: flex;
+        gap: 0.7rem;
+    }
+
+    .reg {
+        font-size: clamp(0.3rem, 3.5vw, 1.5rem);
+        padding: 0.5em 3.2em 0.5em 3.2em;
+        border-radius: 5px;
+        border: none;
+        font-weight: 550;
+        cursor: pointer;
+    }
+
+    .flow {
+        background-color: rgb(83, 83, 247);
+        color: white;
+    }
+
+    .mess {
+        background-color: lightgray;
+    }
+
+    .user-plus {
+        border: none;
+        padding: 0.5em 0.9em 0.5em 0.9em;
+        border-radius: 5px;
+        background-color: lightgray;
+    }
+
+  .content {
+    width: 100%;
+    margin: 0;
+  }
+
+  .content nav {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between; 
+     font-size: clamp(1.2rem, 3.5vw, 1.5rem);
+    align-items: center;
+    color: gray;
+    display: flex;
+    padding-left: 2.7em;
+    padding-right: 2.7em;
+  }
+
+
+    .content nav i {
+        cursor: pointer;
+    }
+
+  .strict {
+    color: black;
+    transform: rotate(90deg);
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .window {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.06rem;
+  }
+
+  .window img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+.vue {
+    display: flex;
+    flex-direction: column;
+    gap:0;
+    position: relative;
+    box-sizing: content-box;
+}
+
+.vue hr {
+  height: 3.5px;
+  width:70px;
+  background-color:black;
+  position: absolute;
+  top:-2px;
+  border: none;
+  border-radius: 5px;
+  align-self: center;
+}
+
+.navi {
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size:  clamp(1.2rem, 3.5vw, 1.7rem);
+    padding: 0.8em 1em 0.8em 1em;
+}
+
+
+    
+}
+
+@media (min-width:400px) and (max-width:499px) {
+
+   html {
+        font: size 14px;
+    }
+
+    .hero {
+        background-color: white;
+        width: 100%;
+        height: 100dvh;
+    }
+
+
+    .head {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 5rem;
+        padding: 0.5rem;
+        padding-left: 1rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        font-size: clamp(0.8rem, 3.5vw, 1.5rem);
+        background-color: white;
+        z-index: 1;
+    }
+
+
+    .uname {
+        font-weight: 600;
+    }
+
+    .left {
+        font-size: 1.5rem;
+    }
+
+    .img_fram {
+        width: 4.4rem;
+        height: 4.4rem;
+        border-radius: 50%;
+        border: 3px solid rgb(237, 42, 74);
+    }
+
+    .img_fram img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 2px solid white
+    }
+
+    .about {
+        margin-top: 4rem;
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .img_fol {
+        display: flex;
+        gap: 1.4rem;
+        align-items: center;
+    }
+
+    .fol {
+        display: flex;
+        flex-direction: column;
+        gap: 0.9rem;
+    }
+
+
+    .Tname {
+        font-size: clamp(0.7rem, 3.5vw, 1.5rem);
+        font-weight: 600;
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    .blue {
+        color: blue;
+    }
+
+    .dots {
+        color: gray;
+    }
+
+    .Fcount {
+        display: flex;
+        gap: 1.5rem;
+        font-size: clamp(0.7rem, 3.5vw, 1.5rem);
+    }
+
+    .bio {
+        margin-top: 0.2rem;
+        font-size: clamp(0.7rem, 3.5vw, 1.5rem);
+        width: 100%;
+        padding: 0.7rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+
+    .atl {
+        color: gray;
+        font-weight: 400;
+    }
+
+    .spike {
+        font-weight: 550;
+        cursor: pointer;
+    }
+
+    .leb {
+        width: 1.7rem;
+        height: 1.7rem;
+        border-radius: 50%;
+    }
+
+    .followed {
+        width: 100%;
+        padding-left: 0.7rem;
+        font-size: clamp(0.5rem, 3.5vw, 1.5rem);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .follow {
+        width: 100%;
+        padding: 0.7rem;
+        display: flex;
+        gap: 0.7rem;
+    }
+
+    .reg {
+        font-size: clamp(0.3rem, 3.5vw, 1.5rem);
+        padding: 0.5em 3.2em 0.5em 3.2em;
+        border-radius: 5px;
+        border: none;
+        font-weight: 550;
+        cursor: pointer;
+    }
+
+    .flow {
+        background-color: rgb(83, 83, 247);
+        color: white;
+    }
+
+    .mess {
+        background-color: lightgray;
+    }
+
+    .user-plus {
+        border: none;
+        padding: 0.5em 0.7em 0.5em 0.7em;
+        border-radius: 5px;
+        background-color: lightgray;
+    }
+
+  .content {
+    width: 100%;
+    margin: 0;
+  }
+
+  .content nav {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between; 
+     font-size: clamp(1.2rem, 3.5vw, 1.5rem);
+    align-items: center;
+    color: gray;
+    display: flex;
+    padding-left: 2.7em;
+    padding-right: 2.7em;
+  }
+
+
+    .content nav i {
+        cursor: pointer;
+    }
+
+  .strict {
+    color: black;
+    transform: rotate(90deg);
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .window {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.06rem;
+  }
+
+  .window img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+.vue {
+    display: flex;
+    flex-direction: column;
+    gap:0;
+    position: relative;
+    box-sizing: content-box;
+}
+
+.vue hr {
+  height: 3.5px;
+  width:70px;
+  background-color:black;
+  position: absolute;
+  top:-2px;
+  border: none;
+  border-radius: 5px;
+  align-self: center;
+}
+
+.navi {
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size:  clamp(1.2rem, 3.5vw, 1.7rem);
+    padding: 0.8em 1em 0.8em 1em;
+}
+
+}
+
+
+@media (min-width:320px) and (max-width:399px) {
+    
+    html {
+        font: size 14px;
+    }
+
+    .hero {
+        background-color: white;
+        width: 100%;
+        height: 100dvh;
+    }
+
+
+    .head {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 5rem;
+        padding: 0.5rem;
+        padding-left: 1rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        font-size: clamp(0.8rem, 3.5vw, 1.5rem);
+        background-color: white;
+        z-index: 1;
+    }
+
+
+    .uname {
+        font-weight: 600;
+    }
+
+    .left {
+        font-size: 1.5rem;
+    }
+
+    .img_fram {
+        width: 4.4rem;
+        height: 4.4rem;
+        border-radius: 50%;
+        border: 3px solid rgb(237, 42, 74);
+    }
+
+    .img_fram img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 2px solid white
+    }
+
+    .about {
+        margin-top: 4rem;
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .img_fol {
+        display: flex;
+        gap: 1.4rem;
+        align-items: center;
+    }
+
+    .fol {
+        display: flex;
+        flex-direction: column;
+        gap: 0.9rem;
+    }
+
+
+    .Tname {
+        font-size: clamp(0.7rem, 3.5vw, 1.5rem);
+        font-weight: 600;
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    .blue {
+        color: blue;
+    }
+
+    .dots {
+        color: gray;
+    }
+
+    .Fcount {
+        display: flex;
+        gap: 1.5rem;
+        font-size: clamp(0.7rem, 3.5vw, 1.5rem);
+    }
+
+    .bio {
+        margin-top: 0.2rem;
+        font-size: clamp(0.7rem, 3.5vw, 1.5rem);
+        width: 100%;
+        padding: 0.7rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+
+    .atl {
+        color: gray;
+        font-weight: 400;
+    }
+
+    .spike {
+        font-weight: 550;
+        cursor: pointer;
+    }
+
+    .leb {
+        width: 1.7rem;
+        height: 1.7rem;
+        border-radius: 50%;
+    }
+
+    .followed {
+        width: 100%;
+        padding-left: 0.7rem;
+        font-size: clamp(0.5rem, 3.5vw, 1.5rem);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .follow {
+        width: 100%;
+        padding: 0.7rem;
+        display: flex;
+        gap: 0.7rem;
+    }
+
+    .reg {
+        font-size: clamp(0.3rem, 3.5vw, 1.5rem);
+        padding: 0.5em 3.2em 0.5em 3.2em;
+        border-radius: 5px;
+        border: none;
+        font-weight: 550;
+        cursor: pointer;
+    }
+
+    .flow {
+        background-color: rgb(83, 83, 247);
+        color: white;
+    }
+
+    .mess {
+        background-color: lightgray;
+    }
+
+    .user-plus {
+        border: none;
+        padding: 0.5em;
+        border-radius: 5px;
+        background-color: lightgray;
+    }
+
+  .content {
+    width: 100%;
+    margin: 0;
+  }
+
+  .content nav {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between; 
+     font-size: clamp(1.2rem, 3.5vw, 1.5rem);
+    align-items: center;
+    color: gray;
+    display: flex;
+    padding-left: 2.7em;
+    padding-right: 2.7em;
+  }
+
+
+    .content nav i {
+        cursor: pointer;
+    }
+
+  .strict {
+    color: black;
+    transform: rotate(90deg);
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .window {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.06rem;
+  }
+
+  .window img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+.vue {
+    display: flex;
+    flex-direction: column;
+    gap:0;
+    position: relative;
+    box-sizing: content-box;
+}
+
+.vue hr {
+  height: 3.5px;
+  width:70%;
+  background-color:black;
+  position: absolute;
+  top:-2px;
+  border: none;
+  border-radius: 5px;
+  align-self: center;
+}
+
+.navi {
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size:  clamp(1.2rem, 3.5vw, 1.7rem);
+    padding: 0.8em 1em 0.8em 1em;
+}
+
+
+}
