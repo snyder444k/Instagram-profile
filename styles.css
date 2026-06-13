@@ -275,6 +275,136 @@ img {
 }
 
 
+#storyShow {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    padding: 2rem 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.showi {
+    display: block;
+}
+
+#storyShow img {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s ease;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#storyShow i {
+    color: rgb(239, 19, 103);
+    position: absolute;
+    right: 0;
+    margin-right: 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+
+.showFollower {
+     position: fixed;
+     background-color: rgba(0, 0, 0, 0.7);
+     height: 100%;
+     width: 100%;
+     top: 0;
+     z-index: 2;
+     left: 0;
+     display: none;
+}
+
+.showFollower #cont {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    position: relative;
+    width: 40%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.showFollower .cont .fol-can {
+    padding: 1rem;
+    width: 100%;
+    display: block;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+
+.showFollower .cont .fol-can i,.showFollower .cont .fol-can p {
+  margin-left: auto;
+}
+
+.replic {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.replic p {
+    font-size: clamp(0.8rem, 3.5vw, 1.5rem);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.re-friend {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.re-friend img {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+
+}
+
+.showMe {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.showMe {
+    font-weight: 600;
+}
+
+.re-friend button {
+    border: none;
+    padding: 0 1.2em 0 1.2em;
+    border-radius: 8px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+#follows, #closeView {
+    cursor: pointer;
+}
+
 @media (min-width:700px) and (max-width:767px) {
 
     html {
@@ -509,6 +639,137 @@ img {
     justify-content: space-between;
     font-size:  clamp(1.2rem, 3.5vw, 1.7rem);
     padding: 0.8em 1em 0.8em 1em;
+}
+
+
+#storyShow {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    padding: 2rem 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.showi {
+    display: block;
+}
+
+#storyShow img {
+    width: 70%;
+    height: 80%;
+    object-fit: cover;
+    transition: 1s ease;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#storyShow i {
+    color: rgb(239, 19, 103);
+    position: absolute;
+    right: 0;
+    margin-right: 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+
+.showFollower {
+     position: fixed;
+     background-color: rgba(0, 0, 0, 0.7);
+     height: 100%;
+     width: 100%;
+     top: 0;
+     z-index: 2;
+     left: 0;
+     display: none;
+}
+
+.showFollower #cont {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    position: relative;
+    width: 85%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.showFollower .cont .fol-can {
+    padding: 1rem;
+    width: 100%;
+    display: block;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+
+.showFollower .cont .fol-can i,.showFollower .cont .fol-can p {
+  margin-left: auto;
+}
+
+.replic {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.replic p {
+    font-size: clamp(0.8rem, 3.5vw, 1.5rem);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.re-friend {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.re-friend img {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+
+}
+
+.showMe {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.showMe {
+    font-weight: 600;
+}
+
+.re-friend button {
+    border: none;
+    padding: 0 1.2em 0 1.2em;
+    border-radius: 8px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#follows, #closeView {
+    cursor: pointer;
 }
 
 }
@@ -749,6 +1010,139 @@ img {
     padding: 0.8em 1em 0.8em 1em;
 }
 
+
+#storyShow {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    padding: 2rem 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.showi {
+    display: block;
+}
+
+#storyShow img {
+    width: 80%;
+    height: 85%;
+    object-fit: cover;
+    transition: 1s ease;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#storyShow i {
+    color: rgb(239, 19, 103);
+    position: absolute;
+    right: 0;
+    margin-right: 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+
+.showFollower {
+     position: fixed;
+     background-color: rgba(0, 0, 0, 0.7);
+     height: 100%;
+     width: 100%;
+     top: 0;
+     z-index: 2;
+     left: 0;
+     display: none;
+}
+
+.showFollower #cont {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    position: relative;
+    width: 85%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.showFollower .cont .fol-can {
+    padding: 1rem;
+    width: 100%;
+    display: block;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+
+.showFollower .cont .fol-can i,.showFollower .cont .fol-can p {
+  margin-left: auto;
+}
+
+.replic {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.replic p {
+    font-size: clamp(0.8rem, 3.5vw, 1.5rem);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.re-friend {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.re-friend img {
+    height: 2.8rem;
+    width: 2.8rem;
+    border-radius: 50%;
+
+}
+
+.showMe {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.showMe {
+    font-weight: 600;
+}
+
+.re-friend button {
+    border: none;
+    padding: 0 1.2em 0 1.2em;
+    border-radius: 8px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#follows, #closeView {
+    cursor: pointer;
+}
+
+
+
 }
 
 @media (min-width:500px) and (max-width:599px) {
@@ -988,6 +1382,136 @@ img {
 }
 
 
+#storyShow {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    padding: 2rem 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.showi {
+    display: block;
+}
+
+#storyShow img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    transition: 1s ease;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#storyShow i {
+    color: rgb(239, 19, 103);
+    position: absolute;
+    right: 0;
+    margin-right: 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+
+.showFollower {
+     position: fixed;
+     background-color: rgba(0, 0, 0, 0.7);
+     height: 100%;
+     width: 100%;
+     top: 0;
+     z-index: 2;
+     left: 0;
+     display: none;
+}
+
+.showFollower #cont {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    position: relative;
+    width: 85%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.showFollower .cont .fol-can {
+    padding: 1rem;
+    width: 100%;
+    display: block;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+
+.showFollower .cont .fol-can i,.showFollower .cont .fol-can p {
+  margin-left: auto;
+}
+
+.replic {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.replic p {
+    font-size: clamp(0.8rem, 3.5vw, 1.5rem);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.re-friend {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.re-friend img {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+
+}
+
+.showMe {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.showMe {
+    font-weight: 600;
+}
+
+.re-friend button {
+    border: none;
+    padding: 0 1.2em 0 1.2em;
+    border-radius: 8px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#follows, #closeView {
+    cursor: pointer;
+}
+
     
 }
 
@@ -1224,6 +1748,138 @@ img {
     font-size:  clamp(1.2rem, 3.5vw, 1.7rem);
     padding: 0.8em 1em 0.8em 1em;
 }
+
+
+#storyShow {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    padding: 2rem 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.showi {
+    display: block;
+}
+
+#storyShow img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    transition: 1s ease;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#storyShow i {
+    color: rgb(239, 19, 103);
+    position: absolute;
+    right: 0;
+    margin-right: 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+
+.showFollower {
+     position: fixed;
+     background-color: rgba(0, 0, 0, 0.7);
+     height: 100%;
+     width: 100%;
+     top: 0;
+     z-index: 2;
+     left: 0;
+     display: none;
+}
+
+.showFollower #cont {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    position: relative;
+    width: 85%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.showFollower .cont .fol-can {
+    padding: 1rem;
+    width: 100%;
+    display: block;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+
+.showFollower .cont .fol-can i,.showFollower .cont .fol-can p {
+  margin-left: auto;
+}
+
+.replic {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.replic p {
+    font-size: clamp(0.8rem, 3.5vw, 1.5rem);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.re-friend {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.re-friend img {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+
+}
+
+.showMe {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.showMe {
+    font-weight: 600;
+}
+
+.re-friend button {
+    border: none;
+    padding: 0 1.2em 0 1.2em;
+    border-radius: 8px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#follows, #closeView {
+    cursor: pointer;
+}
+
 
 }
 
@@ -1463,32 +2119,134 @@ img {
 }
 
 #storyShow {
-    position: absolute;
+    position: fixed;
     height: 100%;
-    top: 0;
+    width: 100%;
     z-index: 2;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transition: 1s ease;
-}
-
-.showno {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    padding: 2rem 0 2rem 0;
+    display: flex;
+    flex-direction: column;
     display: none;
 }
-
 
 .showi {
     display: block;
 }
 
-
-
-
 #storyShow img {
     width: 100%;
-    height: 100%;
+    height: 80%;
     object-fit: cover;
+    transition: 1s ease;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
+#storyShow i {
+    color: rgb(239, 19, 103);
+    position: absolute;
+    right: 0;
+    margin-right: 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.showFollower {
+     position: fixed;
+     background-color: rgba(0, 0, 0, 0.7);
+     height: 100%;
+     width: 100%;
+     top: 0;
+     z-index: 2;
+     left: 0;
+     display: none;
+}
+
+.showFollower #cont {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    position: relative;
+    width: 85%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.showFollower .cont .fol-can {
+    padding: 1rem;
+    width: 100%;
+    display: block;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+
+.showFollower .cont .fol-can i,.showFollower .cont .fol-can p {
+  margin-left: auto;
+}
+
+.replic {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.replic p {
+    font-size: clamp(0.8rem, 3.5vw, 1.5rem);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.re-friend {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.re-friend img {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+
+}
+
+.showMe {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.showMe {
+    font-weight: 600;
+}
+
+.re-friend button {
+    border: none;
+    padding: 0 1.2em 0 1.2em;
+    border-radius: 8px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#follows, #closeView {
+    cursor: pointer;
+}
+
+
 
 }
