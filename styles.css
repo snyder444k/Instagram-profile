@@ -401,8 +401,104 @@ img {
     font-weight: 700;
 }
 
-#follows, #closeView {
+
+#follows, #closeView, #followi, #closeViews {
     cursor: pointer;
+}
+
+
+
+.showFollowi {
+     position: fixed;
+     background-color: rgba(0, 0, 0, 0.7);
+     height: 100%;
+     width: 100%;
+     top: 0;
+     z-index: 2;
+     left: 0;
+     display: none;
+}
+
+.showFollowi #cont {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    position: relative;
+    width: 40%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.showFollowi .cont .foli-can {
+    padding: 1rem;
+    width: 100%;
+    display: block;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+
+.showFollowi .cont .foli-can i, #flowi {
+  margin-left: auto;
+}
+
+.replica {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.replica .search {
+    width: 95%;
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    background-color: rgb(227, 225, 225);
+    gap: 0.6rem;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+} 
+
+.re-friendi {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: clamp(0.7rem,3vw,1.5rem);
+    
+}
+
+.re-friendi img {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+
+}
+
+.showMie {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.showMie {
+    font-weight: 600;
+}
+
+.re-friendi button {
+    border: none;
+    padding: 0 1.2em 0 1.2em;
+    border-radius: 8px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
 }
 
 @media (min-width:700px) and (max-width:767px) {
@@ -767,11 +863,104 @@ img {
     cursor: pointer;
     font-weight: 600;
 }
-
-#follows, #closeView {
+#follows, #closeView, #followi, #closeViews {
     cursor: pointer;
 }
 
+
+
+.showFollowi {
+     position: fixed;
+     background-color: rgba(0, 0, 0, 0.7);
+     height: 100%;
+     width: 100%;
+     top: 0;
+     z-index: 2;
+     left: 0;
+     display: none;
+}
+
+.showFollowi #cont {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    position: relative;
+    width: 85%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.showFollowi .cont .foli-can {
+    padding: 1rem;
+    width: 100%;
+    display: block;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+
+.showFollowi .cont .foli-can i, #flowi {
+  margin-left: auto;
+}
+
+.replica {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.replica .search {
+    width: 95%;
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    background-color: rgb(227, 225, 225);
+    gap: 0.6rem;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 0.8rem;
+} 
+
+.re-friendi {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: clamp(0.7rem,3vw,1.5rem);
+    
+}
+
+.re-friendi img {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+
+}
+
+.showMie {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.showMie {
+    font-weight: 600;
+}
+
+.re-friendi button {
+    border: none;
+    padding: 0 1.2em 0 1.2em;
+    border-radius: 8px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
 }
 
 @media (min-width:600px) and (max-width:699px) {
@@ -1137,10 +1326,104 @@ img {
     font-weight: 600;
 }
 
-#follows, #closeView {
+#follows, #closeView, #followi, #closeViews {
     cursor: pointer;
 }
 
+
+
+.showFollowi {
+     position: fixed;
+     background-color: rgba(0, 0, 0, 0.7);
+     height: 100%;
+     width: 100%;
+     top: 0;
+     z-index: 2;
+     left: 0;
+     display: none;
+}
+
+.showFollowi #cont {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    position: relative;
+    width: 85%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.showFollowi .cont .foli-can {
+    padding: 1rem;
+    width: 100%;
+    display: block;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+
+.showFollowi .cont .foli-can i, #flowi {
+  margin-left: auto;
+}
+
+.replica {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.replica .search {
+    width: 95%;
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    background-color: rgb(227, 225, 225);
+    gap: 0.6rem;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 0.8rem;
+} 
+
+.re-friendi {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: clamp(0.7rem,3vw,1.5rem);
+    
+}
+
+.re-friendi img {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+
+}
+
+.showMie {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.showMie {
+    font-weight: 600;
+}
+
+.re-friendi button {
+    border: none;
+    padding: 0 1.2em 0 1.2em;
+    border-radius: 8px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
 
 
 }
@@ -1508,10 +1791,104 @@ img {
     font-weight: 600;
 }
 
-#follows, #closeView {
+#follows, #closeView, #followi, #closeViews {
     cursor: pointer;
 }
 
+
+
+.showFollowi {
+     position: fixed;
+     background-color: rgba(0, 0, 0, 0.7);
+     height: 100%;
+     width: 100%;
+     top: 0;
+     z-index: 2;
+     left: 0;
+     display: none;
+}
+
+.showFollowi #cont {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    position: relative;
+    width: 85%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.showFollowi .cont .foli-can {
+    padding: 1rem;
+    width: 100%;
+    display: block;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+
+.showFollowi .cont .foli-can i, #flowi {
+  margin-left: auto;
+}
+
+.replica {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.replica .search {
+    width: 95%;
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    background-color: rgb(227, 225, 225);
+    gap: 0.6rem;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 0.8rem;
+} 
+
+.re-friendi {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: clamp(0.7rem,3vw,1.5rem);
+    
+}
+
+.re-friendi img {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+
+}
+
+.showMie {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.showMie {
+    font-weight: 600;
+}
+
+.re-friendi button {
+    border: none;
+    padding: 0 1.2em 0 1.2em;
+    border-radius: 8px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
     
 }
 
@@ -1876,10 +2253,104 @@ img {
     font-weight: 600;
 }
 
-#follows, #closeView {
+#follows, #closeView, #followi, #closeViews {
     cursor: pointer;
 }
 
+
+
+.showFollowi {
+     position: fixed;
+     background-color: rgba(0, 0, 0, 0.7);
+     height: 100%;
+     width: 100%;
+     top: 0;
+     z-index: 2;
+     left: 0;
+     display: none;
+}
+
+.showFollowi #cont {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    position: relative;
+    width: 85%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.showFollowi .cont .foli-can {
+    padding: 1rem;
+    width: 100%;
+    display: block;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+
+.showFollowi .cont .foli-can i, #flowi {
+  margin-left: auto;
+}
+
+.replica {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.replica .search {
+    width: 93%;
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    background-color: rgb(227, 225, 225);
+    gap: 0.6rem;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 0.8rem;
+} 
+
+.re-friendi {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: clamp(0.7rem,3vw,1.5rem);
+    
+}
+
+.re-friendi img {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+
+}
+
+.showMie {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.showMie {
+    font-weight: 600;
+}
+
+.re-friendi button {
+    border: none;
+    padding: 0 1.2em 0 1.2em;
+    border-radius: 8px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
 
 }
 
@@ -2203,22 +2674,22 @@ img {
 }
 
 .replic p {
-    font-size: clamp(0.8rem, 3.5vw, 1.5rem);
+    font-size: clamp(0.7rem, 3vw, 1.5rem);
     text-align: center;
     margin-bottom: 1rem;
 }
 
 .re-friend {
     width: 100%;
-    padding: 1rem;
+    padding: 0.8rem;
     display: flex;
     justify-content: space-between;
     
 }
 
 .re-friend img {
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 2.3rem;
+    width: 2.3rem;
     border-radius: 50%;
 
 }
@@ -2226,7 +2697,7 @@ img {
 .showMe {
     display: flex;
     align-items: center;
-    gap: 0.7rem;
+    gap: 0.5rem;
 }
 
 .showMe {
@@ -2243,10 +2714,104 @@ img {
     font-weight: 600;
 }
 
-#follows, #closeView {
+#follows, #closeView, #followi, #closeViews {
     cursor: pointer;
 }
 
+
+
+.showFollowi {
+     position: fixed;
+     background-color: rgba(0, 0, 0, 0.7);
+     height: 100%;
+     width: 100%;
+     top: 0;
+     z-index: 2;
+     left: 0;
+     display: none;
+}
+
+.showFollowi #cont {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    position: relative;
+    width: 85%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.showFollowi .cont .foli-can {
+    padding: 1rem;
+    width: 100%;
+    display: block;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+
+.showFollowi .cont .foli-can i, #flowi {
+  margin-left: auto;
+}
+
+.replica {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.replica .search {
+    width: 90%;
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    background-color: rgb(227, 225, 225);
+    gap: 0.6rem;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 0.8rem;
+} 
+
+.re-friendi {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: clamp(0.7rem,3vw,1.5rem);
+    
+}
+
+.re-friendi img {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+
+}
+
+.showMie {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.showMie {
+    font-weight: 600;
+}
+
+.re-friendi button {
+    border: none;
+    padding: 0 1.2em 0 1.2em;
+    border-radius: 8px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
 
 
 }
