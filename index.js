@@ -28,6 +28,7 @@ const actualUnf = document.getElementById("act-unfollow");
 
      closeStory.addEventListener("click",()=> {
         story.style.display = "none";
+        frame.style.borderColor = "gray";
      });
 
      followers.addEventListener("click",()=> {
