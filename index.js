@@ -7,6 +7,18 @@ const closeView = document.getElementById("closeView");
 const following = document.getElementById("followi");
 const showFollowi = document.getElementById("showFollowi");
 const closeViews = document.getElementById("closeViews");
+const linkCowry = document.getElementById("link-cowry");
+const clickLink = document.getElementById("click-it");
+const linkCowry2 = document.getElementById("link-cowry2");
+const clickLink2 = document.getElementById("click-it2");
+const showLinks = document.getElementById("showLinks");
+const tapLinks = document.getElementById("spike");
+const closeLinks = document.getElementById("closeLinks");
+const follow = document.getElementById("follow");
+const unfollow = document.getElementById("unfollow");
+const closeUnf = document.getElementById("fa-x");
+const actualUnf = document.getElementById("act-unfollow"); 
+
 
 
  function showStory() {
@@ -33,6 +45,51 @@ const closeViews = document.getElementById("closeViews");
       closeViews.addEventListener("click",()=> {
        showFollowi.style.display = "none";
      });
+
+     linkCowry.addEventListener("click", ()=> {
+       clickLink.click();
+   });
+
+   
+     linkCowry2.addEventListener("click", ()=> {
+       clickLink2.click();
+   });
+
+   tapLinks.addEventListener("click",()=> {
+      showLinks.style.display = "block";
+   });
+
+   closeLinks.addEventListener("click", ()=> {
+     showLinks.style.display = "none";
+   });
+
+   follow.addEventListener("click",(evt)=>{
+     follow.style.backgroundColor = "lightgray";
+     follow.style.color = "black";
+     follow.textContent = "Following";
+
+    if(follow.textContent = "Following") {
+      follow.addEventListener("click", ()=> {
+         unfollow.style.display = "block";
+      });
+
+      closeUnf.addEventListener("click", ()=> {
+         unfollow.style.display = "none";
+      });
+
+      actualUnf.addEventListener("click",(evt)=> {
+      unfollow.style.display = "none";
+      follow.style.backgroundColor = "rgb(83, 83, 247)"; 
+      follow.textContent = "Follow";
+      follow.style.color = "white";
+        location.reload();
+      });
+   }
+
+   });
+
+   
+
  
  }
 

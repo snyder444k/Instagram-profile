@@ -23,21 +23,6 @@ img {
 
 
 
-@media (hover:hover) {
-    html {
-        font-family: "dm sans", sans-serif;
-    }
-
- 
-
-}
-
-@media (hover:none) {
-    html {
-        font-family: roboto, sans-serif;
-    }
-}
-
   html {
         font: size 14px;
     }
@@ -188,6 +173,7 @@ img {
         color: white;
     }
 
+
     .mess {
         background-color: lightgray;
     }
@@ -197,6 +183,7 @@ img {
         padding: 0.5em 1.2em 0.5em 1.2em;
         border-radius: 8px;
         background-color: lightgray;
+        cursor: pointer;
     }
 
   .content {
@@ -402,7 +389,7 @@ img {
 }
 
 
-#follows, #closeView, #followi, #closeViews {
+#follows, #closeView, #followi, #closeViews, #closeLinks, #link-cowry {
     cursor: pointer;
 }
 
@@ -500,6 +487,153 @@ img {
     cursor: pointer;
     font-weight: 600;
 }
+
+.showLinks {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: none;
+}
+
+.showLinks .cont {
+    width: 50%;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: relative;
+    border-radius: 12px;
+}
+
+.spare {
+    padding: 1rem;
+    display: flex;
+    font-size: clamp(1.2rem,3.5vw,1.5rem);
+    font-weight: 500;
+    gap: 3rem;
+    border-bottom: 1px solid black;
+}
+
+.spare i {
+    margin-left: 10px;
+}
+
+.join {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: clamp(1.2rem,3.5vw,1.5rem);
+    gap: 0.6rem;
+    border-bottom: 1px solid black;
+}
+
+.join a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+
+.linker {
+    padding: 0.8rem;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.meen b {
+   font-weight: 300;
+   font-size: clamp(1.1rem,3.5vw,1.5rem);
+}
+
+
+.unfollow {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+
+
+.unfollow .cont {
+    width: 55%;
+    background-color: white;
+    border-radius: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.unfollow .cont .cent-div {
+   width: 100%;
+   padding: 1rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: clamp(0.9rem,3.5vw,1.5rem);
+   border-bottom: 1px solid black;
+} 
+
+.unfollow .cont .cent-div .grace {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.fa-x {
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+.unfollow .cont .cent-div img {
+   height: 70px;
+   width: 70px;
+   border-radius: 50%;
+}
+
+.unfollow .cont .cent-div p {
+    font-weight: 700;
+}
+
+.unfollow-div {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(0.9rem,3.5vw,1.5rem);
+     gap: 2rem;
+}
+
+.unfollow-div span {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+  
+}
+
+
+.unfollow-div span, .unfollow-div p {
+    cursor: pointer;
+}
+
+
+
+.casp {
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
 
 @media (min-width:700px) and (max-width:767px) {
 
@@ -863,10 +997,10 @@ img {
     cursor: pointer;
     font-weight: 600;
 }
-#follows, #closeView, #followi, #closeViews {
+
+#follows, #closeView, #followi, #closeViews, #closeLinks, #link-cowry {
     cursor: pointer;
 }
-
 
 
 .showFollowi {
@@ -961,6 +1095,153 @@ img {
     cursor: pointer;
     font-weight: 600;
 }
+
+.showLinks {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: none;
+}
+
+.showLinks .cont {
+    width: 90%;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: relative;
+    border-radius: 12px;
+}
+
+.spare {
+    padding: 1rem;
+    display: flex;
+    font-size: clamp(1.2rem,3.5vw,1.5rem);
+    font-weight: 500;
+    gap: 3rem;
+    border-bottom: 1px solid black;
+}
+
+.spare i {
+    margin-left: 10px;
+}
+
+.join {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: clamp(1.2rem,3.5vw,1.5rem);
+    gap: 0.6rem;
+    border-bottom: 1px solid black;
+}
+
+.join a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+
+.linker {
+    padding: 0.8rem;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.meen b {
+   font-weight: 300;
+   font-size: clamp(1.1rem,3.5vw,1.5rem);
+}
+
+
+.unfollow {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+
+
+.unfollow .cont {
+    width: 90%;
+    background-color: white;
+    border-radius: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.unfollow .cont .cent-div {
+   width: 100%;
+   padding: 1rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: clamp(0.9rem,3.5vw,1.5rem);
+   border-bottom: 1px solid black;
+} 
+
+.unfollow .cont .cent-div .grace {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.fa-x {
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+.unfollow .cont .cent-div img {
+   height: 70px;
+   width: 70px;
+   border-radius: 50%;
+}
+
+.unfollow .cont .cent-div p {
+    font-weight: 700;
+}
+
+.unfollow-div {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(0.9rem,3.5vw,1.5rem);
+     gap: 1rem;
+}
+
+.unfollow-div span {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+  
+}
+
+
+.unfollow-div span, .unfollow-div p {
+    cursor: pointer;
+}
+
+
+
+.casp {
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
 }
 
 @media (min-width:600px) and (max-width:699px) {
@@ -1326,11 +1607,9 @@ img {
     font-weight: 600;
 }
 
-#follows, #closeView, #followi, #closeViews {
+#follows, #closeView, #followi, #closeViews, #closeLinks, #link-cowry {
     cursor: pointer;
 }
-
-
 
 .showFollowi {
      position: fixed;
@@ -1425,7 +1704,151 @@ img {
     font-weight: 600;
 }
 
+.showLinks {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: none;
+}
 
+.showLinks .cont {
+    width: 90%;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: relative;
+    border-radius: 12px;
+}
+
+.spare {
+    padding: 1rem;
+    display: flex;
+    font-size: clamp(1.2rem,3.5vw,1.5rem);
+    font-weight: 500;
+    gap: 3rem;
+    border-bottom: 1px solid black;
+}
+
+.spare i {
+    margin-left: 10px;
+}
+
+.join {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: clamp(1.2rem,3.5vw,1.5rem);
+    gap: 0.6rem;
+    border-bottom: 1px solid black;
+}
+
+.join a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+
+.linker {
+    padding: 0.8rem;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.meen b {
+   font-weight: 300;
+   font-size: clamp(1.1rem,3.5vw,1.5rem);
+}
+
+
+.unfollow {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+
+
+.unfollow .cont {
+    width: 90%;
+    background-color: white;
+    border-radius: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.unfollow .cont .cent-div {
+   width: 100%;
+   padding: 1rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: clamp(0.9rem,3.5vw,1.5rem);
+   border-bottom: 1px solid black;
+} 
+
+.unfollow .cont .cent-div .grace {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.fa-x {
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+.unfollow .cont .cent-div img {
+   height: 70px;
+   width: 70px;
+   border-radius: 50%;
+}
+
+.unfollow .cont .cent-div p {
+    font-weight: 700;
+}
+
+.unfollow-div {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(0.9rem,3.5vw,1.5rem);
+     gap: 1rem;
+}
+
+.unfollow-div span {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+  
+}
+
+
+.unfollow-div span, .unfollow-div p {
+    cursor: pointer;
+}
+
+
+
+.casp {
+    border: 1px solid black;
+    border-radius: 50%;
+}
 }
 
 @media (min-width:500px) and (max-width:599px) {
@@ -1789,12 +2212,12 @@ img {
     color: white;
     cursor: pointer;
     font-weight: 600;
+
 }
 
-#follows, #closeView, #followi, #closeViews {
+#follows, #closeView, #followi, #closeViews, #closeLinks, #link-cowry {
     cursor: pointer;
 }
-
 
 
 .showFollowi {
@@ -1889,6 +2312,153 @@ img {
     cursor: pointer;
     font-weight: 600;
 }
+
+.showLinks {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: none;
+}
+
+.showLinks .cont {
+    width: 90%;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: relative;
+    border-radius: 12px;
+}
+
+.spare {
+    padding: 1rem;
+    display: flex;
+    font-size: clamp(1.2rem,3.5vw,1.5rem);
+    font-weight: 500;
+    gap: 3rem;
+    border-bottom: 1px solid black;
+}
+
+.spare i {
+    margin-left: 10px;
+}
+
+.join {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: clamp(1.2rem,3.5vw,1.5rem);
+    gap: 0.6rem;
+    border-bottom: 1px solid black;
+}
+
+.join a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+
+.linker {
+    padding: 0.8rem;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.meen b {
+   font-weight: 300;
+   font-size: clamp(1.1rem,3.5vw,1.5rem);
+}
+
+
+.unfollow {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+
+
+.unfollow .cont {
+    width: 90%;
+    background-color: white;
+    border-radius: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.unfollow .cont .cent-div {
+   width: 100%;
+   padding: 1rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: clamp(0.9rem,3.5vw,1.5rem);
+   border-bottom: 1px solid black;
+} 
+
+.unfollow .cont .cent-div .grace {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.fa-x {
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+.unfollow .cont .cent-div img {
+   height: 70px;
+   width: 70px;
+   border-radius: 50%;
+}
+
+.unfollow .cont .cent-div p {
+    font-weight: 700;
+}
+
+.unfollow-div {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(0.9rem,3.5vw,1.5rem);
+     gap: 1rem;
+}
+
+.unfollow-div span {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+  
+}
+
+
+.unfollow-div span, .unfollow-div p {
+    cursor: pointer;
+}
+
+
+
+.casp {
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
     
 }
 
@@ -2253,10 +2823,10 @@ img {
     font-weight: 600;
 }
 
-#follows, #closeView, #followi, #closeViews {
+
+#follows, #closeView, #followi, #closeViews, #closeLinks, #link-cowry {
     cursor: pointer;
 }
-
 
 
 .showFollowi {
@@ -2350,6 +2920,152 @@ img {
     color: white;
     cursor: pointer;
     font-weight: 600;
+}
+
+.showLinks {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: none;
+}
+
+.showLinks .cont {
+    width: 90%;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: relative;
+    border-radius: 12px;
+}
+
+.spare {
+    padding: 1rem;
+    display: flex;
+    font-size: clamp(1.2rem,3.5vw,1.5rem);
+    font-weight: 500;
+    gap: 3rem;
+    border-bottom: 1px solid black;
+}
+
+.spare i {
+    margin-left: 10px;
+}
+
+.join {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: clamp(1.2rem,3.5vw,1.5rem);
+    gap: 0.6rem;
+    border-bottom: 1px solid black;
+}
+
+.join a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+
+.linker {
+    padding: 0.8rem;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.meen b {
+   font-weight: 300;
+   font-size: clamp(1.1rem,3.5vw,1.5rem);
+}
+
+
+.unfollow {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+
+
+.unfollow .cont {
+    width: 90%;
+    background-color: white;
+    border-radius: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.unfollow .cont .cent-div {
+   width: 100%;
+   padding: 1rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: clamp(0.9rem,3.5vw,1.5rem);
+   border-bottom: 1px solid black;
+} 
+
+.unfollow .cont .cent-div .grace {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.fa-x {
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+.unfollow .cont .cent-div img {
+   height: 70px;
+   width: 70px;
+   border-radius: 50%;
+}
+
+.unfollow .cont .cent-div p {
+    font-weight: 700;
+}
+
+.unfollow-div {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(0.9rem,3.5vw,1.5rem);
+     gap: 1rem;
+}
+
+.unfollow-div span {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+  
+}
+
+
+.unfollow-div span, .unfollow-div p {
+    cursor: pointer;
+}
+
+
+
+.casp {
+    border: 1px solid black;
+    border-radius: 50%;
 }
 
 }
@@ -2714,7 +3430,7 @@ img {
     font-weight: 600;
 }
 
-#follows, #closeView, #followi, #closeViews {
+#follows, #closeView, #followi, #closeViews, #closeLinks, .linker {
     cursor: pointer;
 }
 
@@ -2812,6 +3528,172 @@ img {
     cursor: pointer;
     font-weight: 600;
 }
+
+.showLinks {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: none;
+}
+
+.showLinks .cont {
+    width: 90%;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: relative;
+    border-radius: 12px;
+}
+
+.spare {
+    padding: 1rem;
+    display: flex;
+    font-size: clamp(1.2rem,3.5vw,1.5rem);
+    font-weight: 500;
+    gap: 3rem;
+    border-bottom: 1px solid black;
+}
+
+.spare i {
+    margin-left: 10px;
+}
+
+.join {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: clamp(1rem,3.5vw,1.5rem);
+    gap: 0.6rem;
+    border-bottom: 1px solid black;
+}
+
+.join a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+
+.linker {
+    padding: 0.8rem;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.meen b {
+   font-weight: 300;
+   font-size: clamp(1.1rem,3.5vw,1.5rem);
+}
+
+
+.unfollow {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+
+
+.unfollow .cont {
+    width: 90%;
+    background-color: white;
+    border-radius: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.unfollow .cont .cent-div {
+   width: 100%;
+   padding: 1rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: clamp(0.9rem,3.5vw,1.5rem);
+   border-bottom: 1px solid black;
+} 
+
+.unfollow .cont .cent-div .grace {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.fa-x {
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+.unfollow .cont .cent-div img {
+   height: 70px;
+   width: 70px;
+   border-radius: 50%;
+}
+
+.unfollow .cont .cent-div p {
+    font-weight: 700;
+}
+
+.unfollow-div {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(0.9rem,3.5vw,1.5rem);
+     gap: 1rem;
+}
+
+.unfollow-div span {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+  
+}
+
+
+.unfollow-div span, .unfollow-div p {
+    cursor: pointer;
+}
+
+
+
+.casp {
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+}
+
+
+@media (hover:hover) {
+    html {
+        font-family: "dm sans", sans-serif;
+    
+    }
+
+ 
+
+}
+
+@media (hover:none) {
+    html {
+        font-family: roboto, sans-serif;
+        
+    }
+
 
 
 }
