@@ -187,20 +187,19 @@ img {
     }
 
   .content {
-    width: 70%;
+    width: 75%;
     margin: 0;
   }
 
   .content nav {
     margin-top: 1rem;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
      font-size: clamp(1.2rem, 3.5vw, 1.5rem);
     align-items: center;
     color: gray;
     display: flex;
-    padding-left: 7em;
-    padding-right: 7em;
+   padding: 0 2em 0 2em;
   }
 
 
@@ -625,13 +624,139 @@ img {
 
 .unfollow-div span, .unfollow-div p {
     cursor: pointer;
+    padding: 0.5rem;
 }
 
+.unfollow-div span:hover, .unfollow-div p:hover {
+    background-color: lightgray;
+}
 
 
 .casp {
     border: 1px solid black;
     border-radius: 50%;
+}
+
+
+.mute {
+   width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+
+
+
+.mute .cont {
+    width: 55%;
+    background-color: white;
+    border-radius: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.mute .cont .first-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid rgb(167, 165, 165) ;
+    font-size: clamp(1rem,3.5vw,1.5rem);
+}
+
+.muter {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: clamp(1rem,3.5vw,1.5rem);
+    border-bottom:1px solid rgb(167, 165, 165) ;
+
+}
+
+.muter span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 550;
+    cursor: pointer;
+    padding: .5rem;
+}
+
+.muter span:hover {
+    background-color: lightgray;
+}
+
+.muter span input {
+    appearance: none;
+    border: 2px solid gray;
+    width: clamp(1.2rem,3.5vw,1.5rem);
+    height:clamp(1.2rem,3.5vw,1.5rem);
+    border-radius: 50%;
+}
+
+.pick:checked {
+    background-color: black;
+    position: relative;
+}
+
+.pick:checked::before {
+    content: "✓";
+    color: white;
+    position: absolute;
+    font-size: clamp(12px,3.5vw,1.5rem);
+     top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.muter p {
+    font-size: clamp(0.7rem,3.5vw,1.5rem);
+    text-align: center;
+}
+
+.save-mute {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.save-mute button {
+    width: 100%;
+    background-color: rgb(86, 86, 251);
+    padding: .6em 0 .6em 0;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: .5px;
+    cursor: pointer;
+}
+
+.saved {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+    background-color: black;
+    padding: .8rem;
+    color: white; 
+    left: 0;
+    display: none;
+    transition: 2s ease;
 }
 
 
@@ -1242,6 +1367,128 @@ img {
     border-radius: 50%;
 }
 
+
+.mute {
+   width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+
+
+
+.mute .cont {
+    width: 90%;
+    background-color: white;
+    border-radius: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.mute .cont .first-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid rgb(167, 165, 165) ;
+    font-size: clamp(1rem,3.5vw,1.5rem);
+}
+
+.muter {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: clamp(1rem,3.5vw,1.5rem);
+    border-bottom:1px solid rgb(167, 165, 165) ;
+
+}
+
+.muter span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 550;
+    cursor: pointer;
+    padding: .5rem;
+}
+
+.muter span:hover {
+    background-color: lightgray;
+}
+
+.muter span input {
+    appearance: none;
+    border: 2px solid gray;
+    width: clamp(1.2rem,3.5vw,1.5rem);
+    height:clamp(1.2rem,3.5vw,1.5rem);
+    border-radius: 50%;
+}
+
+.pick:checked {
+    background-color: black;
+    position: relative;
+}
+
+.pick:checked::before {
+    content: "✓";
+    color: white;
+    position: absolute;
+    font-size: clamp(12px,3.5vw,1.5rem);
+     top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.muter p {
+    font-size: clamp(0.7rem,3.5vw,1.5rem);
+    text-align: center;
+}
+
+.save-mute {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.save-mute button {
+    width: 100%;
+    background-color: rgb(86, 86, 251);
+    padding: .6em 0 .6em 0;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: .5px;
+    cursor: pointer;
+}
+
+.saved {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+    background-color: black;
+    padding: .8rem;
+    color: white; 
+    left: 0;
+    display: none;
+    transition: 2s ease;
+}
+
 }
 
 @media (min-width:600px) and (max-width:699px) {
@@ -1848,6 +2095,128 @@ img {
 .casp {
     border: 1px solid black;
     border-radius: 50%;
+}
+
+
+.mute {
+   width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+
+
+
+.mute .cont {
+    width: 90%;
+    background-color: white;
+    border-radius: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.mute .cont .first-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid rgb(167, 165, 165) ;
+    font-size: clamp(1rem,3.5vw,1.5rem);
+}
+
+.muter {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: clamp(1rem,3.5vw,1.5rem);
+    border-bottom:1px solid rgb(167, 165, 165) ;
+
+}
+
+.muter span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 550;
+    cursor: pointer;
+    padding: .5rem;
+}
+
+.muter span:hover {
+    background-color: lightgray;
+}
+
+.muter span input {
+    appearance: none;
+    border: 2px solid gray;
+    width: clamp(1.2rem,3.5vw,1.5rem);
+    height:clamp(1.2rem,3.5vw,1.5rem);
+    border-radius: 50%;
+}
+
+.pick:checked {
+    background-color: black;
+    position: relative;
+}
+
+.pick:checked::before {
+    content: "✓";
+    color: white;
+    position: absolute;
+    font-size: clamp(12px,3.5vw,1.5rem);
+     top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.muter p {
+    font-size: clamp(0.7rem,3.5vw,1.5rem);
+    text-align: center;
+}
+
+.save-mute {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.save-mute button {
+    width: 100%;
+    background-color: rgb(86, 86, 251);
+    padding: .6em 0 .6em 0;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: .5px;
+    cursor: pointer;
+}
+
+.saved {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+    background-color: black;
+    padding: .8rem;
+    color: white; 
+    left: 0;
+    display: none;
+    transition: 2s ease;
 }
 }
 
@@ -2459,6 +2828,128 @@ img {
     border-radius: 50%;
 }
 
+
+.mute {
+   width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+
+
+
+.mute .cont {
+    width: 90%;
+    background-color: white;
+    border-radius: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.mute .cont .first-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid rgb(167, 165, 165) ;
+    font-size: clamp(1rem,3.5vw,1.5rem);
+}
+
+.muter {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: clamp(1rem,3.5vw,1.5rem);
+    border-bottom:1px solid rgb(167, 165, 165) ;
+
+}
+
+.muter span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 550;
+    cursor: pointer;
+    padding: .5rem;
+}
+
+.muter span:hover {
+    background-color: lightgray;
+}
+
+.muter span input {
+    appearance: none;
+    border: 2px solid gray;
+    width: clamp(1.2rem,3.5vw,1.5rem);
+    height:clamp(1.2rem,3.5vw,1.5rem);
+    border-radius: 50%;
+}
+
+.pick:checked {
+    background-color: black;
+    position: relative;
+}
+
+.pick:checked::before {
+    content: "✓";
+    color: white;
+    position: absolute;
+    font-size: clamp(12px,3.5vw,1.5rem);
+     top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.muter p {
+    font-size: clamp(0.7rem,3.5vw,1.5rem);
+    text-align: center;
+}
+
+.save-mute {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.save-mute button {
+    width: 100%;
+    background-color: rgb(86, 86, 251);
+    padding: .6em 0 .6em 0;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: .5px;
+    cursor: pointer;
+}
+
+.saved {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+    background-color: black;
+    padding: .8rem;
+    color: white; 
+    left: 0;
+    display: none;
+    transition: 2s ease;
+}
+
     
 }
 
@@ -3068,6 +3559,128 @@ img {
     border-radius: 50%;
 }
 
+
+.mute {
+   width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+
+
+
+.mute .cont {
+    width: 90%;
+    background-color: white;
+    border-radius: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.mute .cont .first-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid rgb(167, 165, 165) ;
+    font-size: clamp(1rem,3.5vw,1.5rem);
+}
+
+.muter {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: clamp(1rem,3.5vw,1.5rem);
+    border-bottom:1px solid rgb(167, 165, 165) ;
+
+}
+
+.muter span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 550;
+    cursor: pointer;
+    padding: .5rem;
+}
+
+.muter span:hover {
+    background-color: lightgray;
+}
+
+.muter span input {
+    appearance: none;
+    border: 2px solid gray;
+    width: clamp(1.2rem,3.5vw,1.5rem);
+    height:clamp(1.2rem,3.5vw,1.5rem);
+    border-radius: 50%;
+}
+
+.pick:checked {
+    background-color: black;
+    position: relative;
+}
+
+.pick:checked::before {
+    content: "✓";
+    color: white;
+    position: absolute;
+    font-size: clamp(12px,3.5vw,1.5rem);
+     top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.muter p {
+    font-size: clamp(0.7rem,3.5vw,1.5rem);
+    text-align: center;
+}
+
+.save-mute {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.save-mute button {
+    width: 100%;
+    background-color: rgb(86, 86, 251);
+    padding: .6em 0 .6em 0;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: .5px;
+    cursor: pointer;
+}
+
+.saved {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+    background-color: black;
+    padding: .8rem;
+    color: white; 
+    left: 0;
+    display: none;
+    transition: 2s ease;
+}
+
 }
 
 
@@ -3674,6 +4287,128 @@ img {
     border: 1px solid black;
     border-radius: 50%;
 }
+
+.mute {
+   width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+
+
+
+.mute .cont {
+    width: 90%;
+    background-color: white;
+    border-radius: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.mute .cont .first-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid rgb(167, 165, 165) ;
+    font-size: clamp(1rem,3.5vw,1.5rem);
+}
+
+.muter {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: clamp(1rem,3.5vw,1.5rem);
+    border-bottom:1px solid rgb(167, 165, 165) ;
+
+}
+
+.muter span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 550;
+    cursor: pointer;
+    padding: .5rem;
+}
+
+.muter span:hover {
+    background-color: lightgray;
+}
+
+.muter span input {
+    appearance: none;
+    border: 2px solid gray;
+    width: clamp(1.2rem,3.5vw,1.5rem);
+    height:clamp(1.2rem,3.5vw,1.5rem);
+    border-radius: 50%;
+}
+
+.pick:checked {
+    background-color: black;
+    position: relative;
+}
+
+.pick:checked::before {
+    content: "✓";
+    color: white;
+    position: absolute;
+    font-size: clamp(12px,3.5vw,1.5rem);
+     top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.muter p {
+    font-size: clamp(0.7rem,3.5vw,1.5rem);
+    text-align: center;
+}
+
+.save-mute {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.save-mute button {
+    width: 100%;
+    background-color: rgb(86, 86, 251);
+    padding: .6em 0 .6em 0;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: .5px;
+    cursor: pointer;
+}
+
+.saved {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+    background-color: black;
+    padding: .8rem;
+    color: white; 
+    left: 0;
+    display: none;
+    transition: 2s ease;
+}
+
 
 }
 

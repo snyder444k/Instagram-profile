@@ -18,6 +18,20 @@ const follow = document.getElementById("follow");
 const unfollow = document.getElementById("unfollow");
 const closeUnf = document.getElementById("fa-x");
 const actualUnf = document.getElementById("act-unfollow"); 
+const chStar = document.getElementById("ch-star");
+const casp = document.getElementById("casp");
+const favourite = document.getElementById("r-star");
+const showFavourite = document.getElementById("re-star");
+const mute = document.getElementById("mute");
+const callMute = document.getElementById("callMute");
+const escapeMute = document.getElementById("escMute");
+const closeMute = document.getElementById("closeMute");
+const saveIt = document.getElementById("saveIt");
+const saffed = document.getElementById("saved");
+const forcePick = document.getElementById("force-pick");
+const pick = document.getElementById("pick");
+const tunePick = document.getElementById("tune-pick");
+const picker = document.getElementById("picker");
 
 
 
@@ -85,14 +99,69 @@ const actualUnf = document.getElementById("act-unfollow");
       follow.style.color = "white";
         location.reload();
       });
+
+     
    }
 
    });
 
-   
+ chStar.addEventListener("click", ()=> {
+          if(casp.classList.contains("fa-solid")) {
+            casp.classList.remove("fa-solid");
+            casp.classList.add("fa-regular");
+          
+          } else if(casp.classList.contains("fa-regular")) {
+            casp.classList.remove("fa-regular");
+            casp.classList.add("fa-solid");
+          }
+      }); 
 
+      favourite.addEventListener("click",()=>{
+        if(showFavourite.classList.contains("fa-regular")){
+          showFavourite.classList.remove("fa-regular");
+          showFavourite.classList.add("fa-solid");
+        } else if(showFavourite.classList.contains("fa-solid")){
+          showFavourite.classList.remove("fa-solid");
+          showFavourite.classList.add("fa-regular");
+        }
+      });
+   
+  callMute.addEventListener("click",()=>{
+        unfollow.style.display = "none";
+        mute.style.display = "block";
+  });
+
+  escapeMute.addEventListener("click",()=> {
+      mute.style.display = "none";
+      unfollow.style.display = "block";
+  });
+
+  closeMute.addEventListener("click",()=>{
+     mute.style.display = "none";
+  });
+
+  
+   saveIt.addEventListener("click",()=>{
+        mute.style.display = "none";
+        saffed.style.display = "block";
+        saffed.style.bottom = "0";
+
+       setTimeout(()=>{
+          saffed.style.display = "none";   
+       },2000);
+     
+       
+    });
+
+    forcePick.addEventListener("click",()=>{
+       pick.click();
+    });
+
+     tunePick.addEventListener("click",()=>{
+       picker.click();
+    });
  
- }
+  }
 
  showStory();
 
