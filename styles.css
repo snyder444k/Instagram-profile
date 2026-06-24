@@ -622,12 +622,12 @@ img {
 }
 
 
-.unfollow-div span, .unfollow-div p {
+.unfollow-div span, .unfollow-div #act-unfollow {
     cursor: pointer;
     padding: 0.5rem;
 }
 
-.unfollow-div span:hover, .unfollow-div p:hover {
+.unfollow-div span:hover, .unfollow-div #act-unfollow:hover {
     background-color: lightgray;
 }
 
@@ -758,6 +758,82 @@ img {
     display: none;
     transition: 2s ease;
 }
+
+.restricted {
+    display: none;
+}
+
+.restricted.act {
+    display: block;
+    position: fixed;
+    background-color: rgba(82, 81, 81, 0.7);
+    padding: 1rem;
+    border-radius: 14px;
+    color: white;
+    animation: appear 2s ease 1s 1;
+    
+}
+
+@keyframes appear {
+    0% {
+    transform: scale(2);
+    left: 50%;
+    transform: translate(-50%,-50%);
+    bottom: 120px;
+    }
+
+    50% {
+        transform: scale(1.5);
+        left: 50%;
+        transform: translate(-50%,-50%);
+        bottom: 120px;
+    }
+
+    100% {
+        transform: scale(1);
+        left: 50%;
+       transform: translate(-50%,-50%);
+       bottom: 120px;
+    }
+}
+
+.srestricted {
+    display: none;
+}
+
+.srestricted.act {
+    display: block;
+    position: fixed;
+    background-color: rgba(82, 81, 81, 0.7);
+    padding: 1rem;
+    border-radius: 14px;
+    color: white;
+    animation: appear 2s ease 1s 1;
+}
+
+@keyframes appear {
+    0% {
+    transform: scale(2);
+    left: 50%;
+    transform: translate(-50%,-50%);
+    bottom: 120px;
+    }
+
+    50% {
+        transform: scale(1.5);
+        left: 50%;
+        transform: translate(-50%,-50%);
+        bottom: 120px;
+    }
+
+    100% {
+        transform: scale(1);
+        left: 50%;
+       transform: translate(-50%,-50%);
+       bottom: 120px;
+    }
+}
+
 
 
 @media (min-width:700px) and (max-width:767px) {
@@ -1489,6 +1565,81 @@ img {
     transition: 2s ease;
 }
 
+ .restricted {
+    display: none;
+}
+
+.restricted.act {
+    display: block;
+    position: fixed;
+    background-color: rgba(82, 81, 81, 0.7);
+    padding: 1rem;
+    border-radius: 14px;
+    color: white;
+    animation: appear 2s ease 1s 1;
+}
+
+@keyframes appear {
+    0% {
+    transform: scale(2);
+    left: 50%;
+    transform: translate(-50%,-50%);
+    bottom: 120px;
+    }
+
+    50% {
+        transform: scale(1.5);
+        left: 50%;
+        transform: translate(-50%,-50%);
+        bottom: 120px;
+    }
+
+    100% {
+        transform: scale(1);
+        left: 50%;
+       transform: translate(-50%,-50%);
+       bottom: 120px;
+    }
+}
+
+.srestricted {
+    display: none;
+}
+
+.srestricted.act {
+    display: block;
+    position: fixed;
+    background-color: rgba(82, 81, 81, 0.7);
+    padding: 1rem;
+    border-radius: 14px;
+    color: white;
+    animation: appear 2s ease 1s 1;
+}
+
+@keyframes appear {
+    0% {
+    transform: scale(2);
+    left: 50%;
+    transform: translate(-50%,-50%);
+    bottom: 120px;
+    }
+
+    50% {
+        transform: scale(1.5);
+        left: 50%;
+        transform: translate(-50%,-50%);
+        bottom: 120px;
+    }
+
+    100% {
+        transform: scale(1);
+        left: 50%;
+       transform: translate(-50%,-50%);
+       bottom: 120px;
+    }
+}
+
+
 }
 
 @media (min-width:600px) and (max-width:699px) {
@@ -2218,6 +2369,81 @@ img {
     display: none;
     transition: 2s ease;
 }
+
+.restricted {
+    display: none;
+}
+
+.restricted.act {
+    display: block;
+    position: fixed;
+    background-color: rgba(82, 81, 81, 0.7);
+    padding: 1rem;
+    border-radius: 14px;
+    color: white;
+    animation: appear 2s ease 1s 1;
+}
+
+@keyframes appear {
+    0% {
+    transform: scale(2);
+    left: 50%;
+    transform: translate(-50%,-50%);
+    bottom: 120px;
+    }
+
+    50% {
+        transform: scale(1.5);
+        left: 50%;
+        transform: translate(-50%,-50%);
+        bottom: 120px;
+    }
+
+    100% {
+        transform: scale(1);
+        left: 50%;
+       transform: translate(-50%,-50%);
+       bottom: 120px;
+    }
+}
+
+.srestricted {
+    display: none;
+}
+
+.srestricted.act {
+    display: block;
+    position: fixed;
+    background-color: rgba(82, 81, 81, 0.7);
+    padding: 1rem;
+    border-radius: 14px;
+    color: white;
+    animation: appear 2s ease 1s 1;
+}
+
+@keyframes appear {
+    0% {
+    transform: scale(2);
+    left: 50%;
+    transform: translate(-50%,-50%);
+    bottom: 120px;
+    }
+
+    50% {
+        transform: scale(1.5);
+        left: 50%;
+        transform: translate(-50%,-50%);
+        bottom: 120px;
+    }
+
+    100% {
+        transform: scale(1);
+        left: 50%;
+       transform: translate(-50%,-50%);
+       bottom: 120px;
+    }
+}
+
 }
 
 @media (min-width:500px) and (max-width:599px) {
@@ -2950,6 +3176,81 @@ img {
     transition: 2s ease;
 }
 
+.restricted {
+    display: none;
+}
+
+.restricted.act {
+    display: block;
+    position: fixed;
+    background-color: rgba(82, 81, 81, 0.7);
+    padding: 1rem;
+    border-radius: 14px;
+    color: white;
+    animation: appear 2s ease 1s 1;
+}
+
+@keyframes appear {
+    0% {
+    transform: scale(2);
+    left: 50%;
+    transform: translate(-50%,-50%);
+    bottom: 120px;
+    }
+
+    50% {
+        transform: scale(1.5);
+        left: 50%;
+        transform: translate(-50%,-50%);
+        bottom: 120px;
+    }
+
+    100% {
+        transform: scale(1);
+        left: 50%;
+       transform: translate(-50%,-50%);
+       bottom: 120px;
+    }
+}
+
+.srestricted {
+    display: none;
+}
+
+.srestricted.act {
+    display: block;
+    position: fixed;
+    background-color: rgba(82, 81, 81, 0.7);
+    padding: 1rem;
+    border-radius: 14px;
+    color: white;
+    animation: appear 2s ease 1s 1;
+}
+
+@keyframes appear {
+    0% {
+    transform: scale(2);
+    left: 50%;
+    transform: translate(-50%,-50%);
+    bottom: 120px;
+    }
+
+    50% {
+        transform: scale(1.5);
+        left: 50%;
+        transform: translate(-50%,-50%);
+        bottom: 120px;
+    }
+
+    100% {
+        transform: scale(1);
+        left: 50%;
+       transform: translate(-50%,-50%);
+       bottom: 120px;
+    }
+}
+
+
     
 }
 
@@ -3681,6 +3982,92 @@ img {
     transition: 2s ease;
 }
 
+.restricted {
+    display: none;
+}
+
+.restricted.act {
+    display: block;
+    position: fixed;
+    background-color: rgba(82, 81, 81, 0.7);
+    padding: 1rem;
+    border-radius: 14px;
+    color: white;
+    animation: appear 2s ease 1s 1;
+}
+
+@keyframes appear {
+    0% {
+    transform: scale(2);
+    left: 50%;
+    transform: translate(-50%,-50%);
+    bottom: 120px;
+    }
+
+    50% {
+        transform: scale(1.5);
+        left: 50%;
+        transform: translate(-50%,-50%);
+        bottom: 120px;
+    }
+
+    100% {
+        transform: scale(1);
+        left: 50%;
+       transform: translate(-50%,-50%);
+       bottom: 120px;
+    }
+}
+
+.srestricted {
+    display: none;
+}
+
+.srestricted.act {
+    display: block;
+    position: fixed;
+    background-color: rgba(82, 81, 81, 0.7);
+    padding: 1rem;
+    border-radius: 14px;
+    color: white;
+    animation: appear 2s ease 1s 1;
+}
+
+@keyframes appear {
+    0% {
+    transform: scale(2);
+    left: 50%;
+    transform: translate(-50%,-50%);
+    bottom: 120px;
+    }
+
+    50% {
+        transform: scale(1.5);
+        left: 50%;
+        transform: translate(-50%,-50%);
+        bottom: 120px;
+    }
+
+    100% {
+        transform: scale(1);
+        left: 50%;
+       transform: translate(-50%,-50%);
+       bottom: 120px;
+    }
+}
+
+.message {
+    position: fixed;
+    background-color: white;
+    padding: 1em;
+    font-size: clamp(1.2rem,3.5vw,1.5rem);
+    bottom: 12%;
+    right: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
 }
 
 
@@ -4409,6 +4796,85 @@ img {
     transition: 2s ease;
 }
 
+.restricted {
+    display: none;
+}
+
+.restricted.act {
+    display: block;
+    position: fixed;
+    background-color: rgba(82, 81, 81, 0.7);
+    padding: 1rem;
+    border-radius: 14px;
+    color: white;
+    animation: appear 2s ease 1s 1;
+}
+
+@keyframes appear {
+    0% {
+    transform: scale(2);
+    left: 50%;
+    transform: translate(-50%,-50%);
+    bottom: 120px;
+    }
+
+    50% {
+        transform: scale(1.5);
+        left: 50%;
+        transform: translate(-50%,-50%);
+        bottom: 120px;
+    }
+
+    100% {
+        transform: scale(1);
+        left: 50%;
+       transform: translate(-50%,-50%);
+       bottom: 120px;
+    }
+}
+
+.srestricted {
+    display: none;
+}
+
+.srestricted.act {
+    display: block;
+    position: fixed;
+    background-color: rgba(82, 81, 81, 0.7);
+    padding: 1rem;
+    border-radius: 14px;
+    color: white;
+    animation: appear 2s ease 1s 1;
+}
+
+@keyframes appear {
+    0% {
+    transform: scale(2);
+    left: 50%;
+    transform: translate(-50%,-50%);
+    bottom: 120px;
+    }
+
+    50% {
+        transform: scale(1.5);
+        left: 50%;
+        transform: translate(-50%,-50%);
+        bottom: 120px;
+    }
+
+    100% {
+        transform: scale(1);
+        left: 50%;
+       transform: translate(-50%,-50%);
+       bottom: 120px;
+    }
+
+ 
+}
+
+.message {
+    display: none;
+}
 
 }
 

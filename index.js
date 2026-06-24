@@ -32,7 +32,10 @@ const forcePick = document.getElementById("force-pick");
 const pick = document.getElementById("pick");
 const tunePick = document.getElementById("tune-pick");
 const picker = document.getElementById("picker");
-
+const restrict = document.getElementById("de-restrict");
+const restricted = document.getElementById("restricted"); 
+const refactor = document.getElementById("re-factor");
+const srestricted = document.getElementById("srestricted"); 
 
 
  function showStory() {
@@ -160,8 +163,36 @@ const picker = document.getElementById("picker");
      tunePick.addEventListener("click",()=>{
        picker.click();
     });
+
+restrict.addEventListener("click", () => {
+    const isRestricted = refactor.classList.contains("restrict");
+
+    if (isRestricted) {
+     restricted.classList.add("act");
+
+        setTimeout(()=> {
+   restricted.classList.remove("act");
+        },3000);
+        
+        refactor.textContent = "Unrestrict";
+        refactor.classList.remove("restrict");
+        refactor.classList.add("unrestricted");
+        
+    } else  {
+        srestricted.classList.add("act");
+        
+         setTimeout(()=> {
+   srestricted.classList.remove("act");
+        },3000);
+
+        refactor.textContent = "Restrict";
+        refactor.classList.remove("unrestricted");
+        refactor.classList.add("restrict");
+    }
+     unfollow.style.display = "none";
+});
  
-  }
+} 
 
  showStory();
 
