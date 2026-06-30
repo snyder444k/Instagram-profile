@@ -36,6 +36,10 @@ const restrict = document.getElementById("de-restrict");
 const restricted = document.getElementById("restricted"); 
 const refactor = document.getElementById("re-factor");
 const srestricted = document.getElementById("srestricted"); 
+const cancelCons = document.getElementById("cancelCons");
+const messenger = document.getElementById("messenger"); 
+const messageTap = document.getElementById("message");
+
 
 
  function showStory() {
@@ -191,7 +195,17 @@ restrict.addEventListener("click", () => {
     }
      unfollow.style.display = "none";
 });
- 
+
+ cancelCons.addEventListener("click",()=> {
+    messenger.style.display = "none";
+
+ });
+
+ messageTap.addEventListener("click",()=> {
+    messenger.style.display = "block";
+ });
+
+
 } 
 
  showStory();

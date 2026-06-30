@@ -57,7 +57,7 @@
 
       </div>
 
-     
+
       <div class="bio">
         <p> <b> Giannis Antetokounmpo </b></p>
         <p class="atl"> Athlete</p>
@@ -70,12 +70,12 @@
 
       <div class="follow">
         <button class="flow reg" id="follow">Follow</button>
-        <button class="mess reg">Message</button>
+        <button class="mess reg" id="messaging">Message</button>
         <button class="user-plus"><i class="fa-solid fa-user-plus"></i></button>
 
       </div>
-     
-    
+
+
     </section>
 
     <section class="content">
@@ -111,8 +111,52 @@
   </div>
 
 
-  <div class="message">
+  <div class="message" id="message">
     <i class="fa-regular fa-paper-plane"></i>
+  </div>
+
+  <div class="messenger" id="messenger">
+    <div class="tabs">
+      <p>Messages</p>
+      <span class="cons">
+        <i class="fa-solid fa-up-right-and-down-left-from-center" id="enlargen"></i>
+        <i class="fa-solid fa-x" id="cancelCons"></i>
+      </span>
+    </div>
+    <div class="chats">
+      <div class="chat-tabs">
+          <span class="gridder">
+        <img src="./imgs/alex.jpg" alt="">
+        <span><p class="mentor">Alex Hormozi <i class="fa-solid fa-circle-check blue"></i></p><p>Alex sent an attachment.   6d</p></span>
+         </span>
+
+         <i class="fa-solid fa-ellipsis" ></i>
+      </div>
+      <div class="chat-tabs">
+          <span class="gridder">
+        <img src="./imgs/vinh.jpg" alt="">
+        <span><p class="mentor">Vinh Giang <i class="fa-solid fa-circle-check blue"></i></p><p>Vinh sent an attachment.   6d</p></span>
+         </span>
+
+         <i class="fa-solid fa-ellipsis"></i>
+      </div>
+      <div class="chat-tabs">
+          <span class="gridder">
+        <img src="./imgs/steve.jpg" alt="">
+        <span><p class="mentor">Steven Bartlett <i class="fa-solid fa-circle-check blue"></i></p><p>Steven sent an attachment.   6d</p></span>
+         </span>
+
+         <i class="fa-solid fa-ellipsis"></i>
+      </div>
+      <div class="chat-tabs">
+          <span class="gridder">
+        <img src="./imgs/martell.jpg" alt="">
+        <span><p class="mentor">Dan Martell <i class="fa-solid fa-circle-check blue"></i></p><p>You sent an attachment.   6d</p></span>
+         </span>
+
+         <i class="fa-solid fa-ellipsis"></i>
+      </div>
+    </div>
   </div>
 
 
@@ -127,191 +171,192 @@
 
 
   <div class="pop-ups">
-  <div id="mute" class="mute">
-          <div class="cont">
-             <div class="first-div">
-                <i class="fa-solid fa-angle-left" id="escMute"></i>
-                <p>Mute</p>
-                <i class="fa-solid fa-x" id="closeMute"></i>
-             </div>
-             <div class="muter">
-              <span id="force-pick">Posts <input type="checkbox" id="pick" class="pick"></span>
-              <span id="tune-pick">Stories <input type="checkbox" class="pick" id="picker"></span>
-              <p>Instagram won't let them know you muted them.</p>
-             </div>
-             <div class="save-mute">
-              <button id="saveIt">Save</button>
-             </div>
-          </div>
-      </div>
-
-      <div class="saved" id="saved">
-        <p>Saved</p>
-      </div>
-
-      
-      <div class="showLinks" id="showLinks">
-        <div class="cont">
-          <span class="spare"> <i class="fa-solid fa-x" id="closeLinks"></i>
-            <p>Links</p>
-          </span>
-          <div class="join"><span class="linker" id="link-cowry"><i class="fa-solid fa-link"></i></span> <a
-              id="click-it"
-              href="https://antetokounbros.com/en/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnTIyjz5hBaKiM8eZyu__ppCcQFhrFtqwsq-QVGOAWuPNd-BSATvhPdkXC8ug_aem_yplUpVeoH87kJeHcAbmCrA">antetokounbros.com/en</a>
-          </div>
-          <div class="join"><span class="linker" id="link-cowry2"><i class="fa-solid fa-link"></i></span> <a
-              href="https://candyfunstreet.com/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnCLvKJdWaDzdENlCfU6xdFTFkyXrxAl8GRAETiGnuwxv7KTvpTs-YVp8wCGM_aem_WQYDu9LXiSR8I_B3XEXdeQ"
-              class="meen" id="click-it2">Candy fun street <br> <b> candyfunstreet.com </b></a></div>
+    <div id="mute" class="mute">
+      <div class="cont">
+        <div class="first-div">
+          <i class="fa-solid fa-angle-left" id="escMute"></i>
+          <p>Mute</p>
+          <i class="fa-solid fa-x" id="closeMute"></i>
+        </div>
+        <div class="muter">
+          <span id="force-pick">Posts <input type="checkbox" id="pick" class="pick"></span>
+          <span id="tune-pick">Stories <input type="checkbox" class="pick" id="picker"></span>
+          <p>Instagram won't let them know you muted them.</p>
+        </div>
+        <div class="save-mute">
+          <button id="saveIt">Save</button>
         </div>
       </div>
+    </div>
+
+    <div class="saved" id="saved">
+      <p>Saved</p>
+    </div>
 
 
-       <div class="showFollower" id="showFollower">
-        <div class="cont" id="cont">
-          <span class="fol-can">
-            <p>Followers</p>
-            <i class="fa-solid fa-x" id="closeView"></i>
-          </span>
-
-          <div class="replic">
-            <p>only <b>giannis_an34</b> can see followers</p>
-            <div class="re-follow">
-
-              <span class="re-friend">
-                <div class="showMe">
-                  <img src="./imgs/leb1.jpg" alt="">
-                  <p>kingjames</p>
-                </div>
-                <button>Follow</button>
-              </span>
-
-              <span class="re-friend">
-                <div class="showMe">
-                  <img src="./imgs/ney1.jpg" alt="">
-                  <p>neymarjr</p>
-                </div>
-                <button>Follow</button>
-              </span>
-
-              <span class="re-friend">
-                <div class="showMe">
-                  <img src="./imgs/curry1.jpg" alt="">
-                  <p>stephencurry30</p>
-                </div>
-                <button>Follow</button>
-              </span>
-
-              <span class="re-friend">
-                <div class="showMe">
-                  <img src="./imgs/tat1.jpg" alt="">
-                  <p>jaytatum0</p>
-                </div>
-                <button>Follow</button>
-              </span>
-
-              <span class="re-friend">
-                <div class="showMe">
-                  <img src="./imgs/rock1.jpg" alt="">
-                  <p>therock</p>
-                </div>
-                <button>Follow</button>
-              </span>
-
-            </div>
-          </div>
-
+    <div class="showLinks" id="showLinks">
+      <div class="cont">
+        <span class="spare"> <i class="fa-solid fa-x" id="closeLinks"></i>
+          <p>Links</p>
+        </span>
+        <div class="join"><span class="linker" id="link-cowry"><i class="fa-solid fa-link"></i></span> <a id="click-it"
+            href="https://antetokounbros.com/en/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnTIyjz5hBaKiM8eZyu__ppCcQFhrFtqwsq-QVGOAWuPNd-BSATvhPdkXC8ug_aem_yplUpVeoH87kJeHcAbmCrA">antetokounbros.com/en</a>
         </div>
+        <div class="join"><span class="linker" id="link-cowry2"><i class="fa-solid fa-link"></i></span> <a
+            href="https://candyfunstreet.com/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnCLvKJdWaDzdENlCfU6xdFTFkyXrxAl8GRAETiGnuwxv7KTvpTs-YVp8wCGM_aem_WQYDu9LXiSR8I_B3XEXdeQ"
+            class="meen" id="click-it2">Candy fun street <br> <b> candyfunstreet.com </b></a></div>
       </div>
+    </div>
 
 
-      <div class="showFollowi" id="showFollowi">
-        <div class="cont" id="cont">
-          <span class="foli-can">
-            <p id="flowi">Following</p>
-            <i class="fa-solid fa-x" id="closeViews"></i>
-          </span>
+    <div class="showFollower" id="showFollower">
+      <div class="cont" id="cont">
+        <span class="fol-can">
+          <p>Followers</p>
+          <i class="fa-solid fa-x" id="closeView"></i>
+        </span>
 
-          <div class="replica">
+        <div class="replic">
+          <p>only <b>giannis_an34</b> can see followers</p>
+          <div class="re-follow">
 
-            <div class="re-followi">
-              <div class="search"><i class="fa-solid fa-magnifying-glass"></i>
-                <p>Search</p>
+            <span class="re-friend">
+              <div class="showMe">
+                <img src="./imgs/leb1.jpg" alt="">
+                <p>kingjames</p>
               </div>
-              <span class="re-friendi">
-                <div class="showMie">
-                  <img src="./imgs/leb1.jpg" alt="">
-                  <p>kingjames</p>
-                </div>
-                <button>Follow</button>
-              </span>
+              <button>Follow</button>
+            </span>
 
-              <span class="re-friendi">
-                <div class="showMie">
-                  <img src="./imgs/ney1.jpg" alt="">
-                  <p>neymarjr</p>
-                </div>
-                <button>Follow</button>
-              </span>
+            <span class="re-friend">
+              <div class="showMe">
+                <img src="./imgs/ney1.jpg" alt="">
+                <p>neymarjr</p>
+              </div>
+              <button>Follow</button>
+            </span>
 
-              <span class="re-friendi">
-                <div class="showMe">
-                  <img src="./imgs/curry1.jpg" alt="">
-                  <p>stephencurry30</p>
-                </div>
-                <button>Follow</button>
-              </span>
+            <span class="re-friend">
+              <div class="showMe">
+                <img src="./imgs/curry1.jpg" alt="">
+                <p>stephencurry30</p>
+              </div>
+              <button>Follow</button>
+            </span>
 
-              <span class="re-friendi">
-                <div class="showMie">
-                  <img src="./imgs/tat1.jpg" alt="">
-                  <p>jaytatum0</p>
-                </div>
-                <button>Follow</button>
-              </span>
+            <span class="re-friend">
+              <div class="showMe">
+                <img src="./imgs/tat1.jpg" alt="">
+                <p>jaytatum0</p>
+              </div>
+              <button>Follow</button>
+            </span>
 
-              <span class="re-friendi">
-                <div class="showMie">
-                  <img src="./imgs/rock1.jpg" alt="">
-                  <p>therock</p>
-                </div>
-                <button>Follow</button>
-              </span>
+            <span class="re-friend">
+              <div class="showMe">
+                <img src="./imgs/rock1.jpg" alt="">
+                <p>therock</p>
+              </div>
+              <button>Follow</button>
+            </span>
 
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-       <div class="unfollow" id="unfollow">
-        <div class="cont">
-          <div class="cent-div">
-            <div class="grace">
-              <img src="./imgs/gian2.jpg" alt="">
-              <p>giannis_an34</p>
-            </div>
-            <i class="fa-solid fa-x" id="fa-x"></i>
-          </div> 
-          <div class="unfollow-div">
-            <span id="ch-star">Add to close friends list <i class="fa-solid fa-star casp" id="casp"></i></span>
-            <span id="r-star" >Add to favourites <i class="fa-regular fa-star" id="re-star"></i></span>
-            <span id="callMute">Mute<i class="fa-solid fa-angle-right"></i></span>
-            <span id="de-restrict"><p id="re-factor" class="restrict">Restrict</p><i class="fa-solid fa-angle-right"></i></span>
-            <p id="act-unfollow">Unfollow</p>
           </div>
         </div>
+
       </div>
+    </div>
 
 
+    <div class="showFollowi" id="showFollowi">
+      <div class="cont" id="cont">
+        <span class="foli-can">
+          <p id="flowi">Following</p>
+          <i class="fa-solid fa-x" id="closeViews"></i>
+        </span>
 
-      <div class="restricted" id="restricted">
-         Account Restricted
+        <div class="replica">
+
+          <div class="re-followi">
+            <div class="search"><i class="fa-solid fa-magnifying-glass"></i>
+              <p>Search</p>
+            </div>
+            <span class="re-friendi">
+              <div class="showMie">
+                <img src="./imgs/leb1.jpg" alt="">
+                <p>kingjames</p>
+              </div>
+              <button>Follow</button>
+            </span>
+
+            <span class="re-friendi">
+              <div class="showMie">
+                <img src="./imgs/ney1.jpg" alt="">
+                <p>neymarjr</p>
+              </div>
+              <button>Follow</button>
+            </span>
+
+            <span class="re-friendi">
+              <div class="showMe">
+                <img src="./imgs/curry1.jpg" alt="">
+                <p>stephencurry30</p>
+              </div>
+              <button>Follow</button>
+            </span>
+
+            <span class="re-friendi">
+              <div class="showMie">
+                <img src="./imgs/tat1.jpg" alt="">
+                <p>jaytatum0</p>
+              </div>
+              <button>Follow</button>
+            </span>
+
+            <span class="re-friendi">
+              <div class="showMie">
+                <img src="./imgs/rock1.jpg" alt="">
+                <p>therock</p>
+              </div>
+              <button>Follow</button>
+            </span>
+
+          </div>
+        </div>
+
       </div>
+    </div>
 
-      
-      <div class="srestricted" id="srestricted">
-         Account Unrestricted
+    <div class="unfollow" id="unfollow">
+      <div class="cont">
+        <div class="cent-div">
+          <div class="grace">
+            <img src="./imgs/gian2.jpg" alt="">
+            <p>giannis_an34</p>
+          </div>
+          <i class="fa-solid fa-x" id="fa-x"></i>
+        </div>
+        <div class="unfollow-div">
+          <span id="ch-star">Add to close friends list <i class="fa-solid fa-star casp" id="casp"></i></span>
+          <span id="r-star">Add to favourites <i class="fa-regular fa-star" id="re-star"></i></span>
+          <span id="callMute">Mute<i class="fa-solid fa-angle-right"></i></span>
+          <span id="de-restrict">
+            <p id="re-factor" class="restrict">Restrict</p><i class="fa-solid fa-angle-right"></i>
+          </span>
+          <p id="act-unfollow">Unfollow</p>
+        </div>
       </div>
+    </div>
+
+
+
+    <div class="restricted" id="restricted">
+      Account Restricted
+    </div>
+
+
+    <div class="srestricted" id="srestricted">
+      Account Unrestricted
+    </div>
 
 
 
