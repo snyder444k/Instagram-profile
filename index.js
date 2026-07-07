@@ -39,6 +39,8 @@ const srestricted = document.getElementById("srestricted");
 const cancelCons = document.getElementById("cancelCons");
 const messenger = document.getElementById("messenger"); 
 const messageTap = document.getElementById("message");
+const suggest = document.getElementById("suggested");
+const userPlus = document.getElementById("user-plus");
 
 
 
@@ -205,8 +207,19 @@ restrict.addEventListener("click", () => {
     messenger.style.display = "block";
  });
 
+ userPlus.addEventListener("click",(evt)=> {
+   let hasClass = userPlus.classList.contains("doom");
+   if(hasClass) {
+      userPlus.classList.remove("doom");
+      suggest.style.display = "none";
+   } else {
+      userPlus.classList.add("doom");
+      suggest.style.display = "block";
+   }   
+ 
+}); 
 
-} 
+ }
 
  showStory();
 
