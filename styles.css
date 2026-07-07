@@ -948,10 +948,42 @@ display: none;
 
 
 .see-surge {
-    display:flex;
-    gap: 4rem;
     margin-top: 1rem;
+    position: relative;
 }
+
+.scroll {
+    display: flex;
+    overflow: hidden;
+    overflow-x: hidden;
+    gap: 1rem;
+}
+
+.see-surge::-webkit-scrollbar{
+    display: none;
+}
+
+.arrow, .arrowi {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    z-index: 2;
+    opacity: 0.8;
+}
+
+.clone1 {
+    left: 2px;
+}
+
+.clone2 {
+    right: 2px;
+}
+
+
  .see-them {
     position: relative;
     padding: 1rem;
@@ -1010,6 +1042,42 @@ display: none;
     font-size: .9rem;
     color: gray;
     margin:-7px 0 5px 0;
+}
+
+
+@media (min-width:1100px) and (max-width:1300px) { 
+
+    #suggested {
+    width: 65%;
+}
+
+}
+
+
+@media (min-width:1000px) and (max-width:1100px) { 
+
+    #suggested {
+    width: 70%;
+}
+
+}
+
+
+
+@media (min-width:900px) and (max-width:1000px) { 
+
+    #suggested {
+    width: 75%;
+}
+
+}
+
+@media (min-width:767px) and (max-width:900px) { 
+
+    #suggested {
+    width: 80%;
+}
+
 }
 
 
@@ -1902,7 +1970,7 @@ display: none;
 #suggested {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 75%;
     padding: 1rem 0 1rem 0;
     display: none;
 }
@@ -1921,17 +1989,26 @@ display: none;
 }
 
 .see-surge {
-    display:flex;
-    gap: .5rem;
-    overflow-x:auto;
-    overflow-y: hidden;
     margin-top: 1rem;
+
+}
+
+
+
+.arrow,.arrowi {
+    display: none;
+}
+
+.scroll {
+    overflow-x: auto;
+    overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
 }
 
-.see-surge::-webkit-scrollbar {
+.scroll::-webkit-scrollbar {
     display: none;
 }
+
  .see-them {
     position: relative;
     padding: 1rem;
@@ -2914,6 +2991,23 @@ display: none;
 .see-surge::-webkit-scrollbar {
     display: none;
 }
+
+
+.arrow,.arrowi{
+   display: none;
+}
+
+
+.scroll {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+
  .see-them {
     position: relative;
     padding: 1rem;
@@ -3901,6 +3995,22 @@ display: none;
 }
 
 
+.arrow,.arrowi{
+   display: none;
+}
+
+
+
+.scroll {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+
  .see-them {
     position: relative;
     padding: 1rem;
@@ -4883,6 +4993,22 @@ display: none;
     display: none;
 }
 
+
+.arrow,.arrowi{
+   display: none;
+}
+
+
+.scroll {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+
  .see-them {
     position: relative;
     padding: 1rem;
@@ -5783,6 +5909,22 @@ display: none;
 }
 
 .see-surge::-webkit-scrollbar {
+    display: none;
+}
+
+
+.arrow,.arrowi{
+   display: none;
+}
+
+
+.scroll {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.scroll::-webkit-scrollbar {
     display: none;
 }
 

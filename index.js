@@ -41,6 +41,12 @@ const messenger = document.getElementById("messenger");
 const messageTap = document.getElementById("message");
 const suggest = document.getElementById("suggested");
 const userPlus = document.getElementById("user-plus");
+const scrollDiv = document.getElementById("scroll");
+const arrowRight = document.getElementById("rightArr");
+const arrowLeft = document.getElementById("leftArr");
+
+
+
 
 
 
@@ -219,8 +225,15 @@ restrict.addEventListener("click", () => {
  
 }); 
 
- }
+  arrowRight.addEventListener("click",()=> {
+      scrollDiv.scrollBy({left: 300, behavior: "smooth"});
+ });
 
+   arrowLeft.addEventListener("click",()=> {
+      scrollDiv.scrollBy({left: -300, behavior: "smooth"});
+ });
+
+}
  showStory();
 
  
