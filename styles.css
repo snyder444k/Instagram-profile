@@ -955,11 +955,11 @@ display: none;
 .scroll {
     display: flex;
     overflow: hidden;
-    overflow-x: hidden;
+    overflow-x: auto;
     gap: 1rem;
 }
 
-.see-surge::-webkit-scrollbar{
+.scroll::-webkit-scrollbar{
     display: none;
 }
 
