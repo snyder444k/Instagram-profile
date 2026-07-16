@@ -44,8 +44,7 @@ const userPlus = document.getElementById("user-plus");
 const scrollDiv = document.getElementById("scroll");
 const arrowRight = document.getElementById("rightArr");
 const arrowLeft = document.getElementById("leftArr");
-
-
+const seeThemCancel = document.querySelectorAll(".giff");
 
 
 
@@ -233,6 +232,15 @@ restrict.addEventListener("click", () => {
       scrollDiv.scrollBy({left: -300, behavior: "smooth"});
  });
 
+  
+   seeThemCancel.forEach(item => {
+
+   item.addEventListener("click",()=>{
+     item.closest('.see-them').style.display = "none";
+   });
+  
+  });
+ 
 }
  showStory();
 
